@@ -21,12 +21,12 @@ export default function WorkPage() {
         <Reveal>
           <SectionTitle index="02a.">Experience</SectionTitle>
         </Reveal>
-        <div className="relative pl-[30px]">
+        <div className="relative pl-[46px]">
           <div className="absolute bottom-0 left-[14px] top-0 w-px bg-borderc dark:bg-borderc-dark" />
           {EXPERIENCE.map((e, i) => (
             <Reveal key={e.name} delay={i * 0.4}>
               <div className="relative mb-[26px]">
-                <div className="absolute -left-[30px] top-0.5 flex h-[30px] w-[30px] items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-surface dark:bg-surface-dark">
+                <div className="absolute -left-[46px] top-0.5 flex h-[30px] w-[30px] items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-surface dark:bg-surface-dark">
                   <i className={`${e.icon} text-[11px] text-textPrimary dark:text-textPrimary-dark`} />
                 </div>
                 <p className="text-[13px] font-bold text-textPrimary dark:text-textPrimary-dark">{e.name}</p>
@@ -49,7 +49,7 @@ export default function WorkPage() {
       <section className="py-2.5 pb-[26px]">
         <Reveal>
           <SectionTitle index="02b.">Education</SectionTitle>
-          <div className="rounded-2xl border border-borderc dark:border-borderc-dark bg-surface dark:bg-surface-dark p-4.5 transition-all duration-[400ms] ease-smooth hover:-translate-y-1 hover:border-borderStrong dark:hover:border-borderStrong-dark hover:shadow-[0_14px_28px_rgba(0,0,0,0.2)]">
+          <div className="rounded-2xl border border-borderc dark:border-borderc-dark bg-surface dark:bg-surface-dark p-5 transition-all duration-[400ms] ease-smooth hover:-translate-y-1 hover:border-borderStrong dark:hover:border-borderStrong-dark hover:shadow-[0_14px_28px_rgba(0,0,0,0.2)]">
             <p className="mb-0.5 text-[13px] font-bold text-textPrimary dark:text-textPrimary-dark">{EDUCATION.school}</p>
             <p className="mb-0.5 text-[11px] text-textSecondary dark:text-textSecondary-dark">{EDUCATION.degree}</p>
             <p className="mb-2.5 font-mono text-[10px] text-textMuted dark:text-textMuted-dark">{EDUCATION.time}</p>

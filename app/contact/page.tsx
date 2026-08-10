@@ -38,7 +38,7 @@ export default function ContactPage() {
             {CONTACT_FACTS.map((f) => (
               <div
                 key={f.label}
-                className="flex items-center gap-3 rounded-2xl border border-borderc dark:border-borderc-dark bg-surface dark:bg-surface-dark p-4.5 transition-all duration-[400ms] ease-smooth hover:-translate-y-1 hover:border-borderStrong dark:hover:border-borderStrong-dark hover:shadow-[0_14px_28px_rgba(0,0,0,0.2)]"
+                className="flex items-center gap-3 rounded-2xl border border-borderc dark:border-borderc-dark bg-surface dark:bg-surface-dark p-5 transition-all duration-[400ms] ease-smooth hover:-translate-y-1 hover:border-borderStrong dark:hover:border-borderStrong-dark hover:shadow-[0_14px_28px_rgba(0,0,0,0.2)]"
               >
                 <div className="flex h-[34px] w-[34px] flex-shrink-0 items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-surfaceHover dark:bg-surfaceHover-dark">
                   <i className={`${f.icon} text-[13px] text-textPrimary dark:text-textPrimary-dark`} />
