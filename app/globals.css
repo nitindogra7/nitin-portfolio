@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Geist';
+  src: url('https://cdn.jsdelivr.net/gh/vercel/geist-font@main/packages/next/dist/fonts/geist-sans/Geist-Variable.woff2') format('woff2-variations'),
+       url('https://cdn.jsdelivr.net/gh/vercel/geist-font@main/packages/next/dist/fonts/geist-sans/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-bg dark:bg-bg-dark text-textPrimary dark:text-textPrimary-dark font-sans overflow-x-hidden transition-colors duration-300;
+  }
+  a {
+    @apply no-underline text-inherit;
+  }
+  ::selection {
+    @apply bg-borderStrong dark:bg-borderStrong-dark;
+  }
+  button, input, textarea {
+    font: inherit;
+  }
+  button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+    @apply outline outline-2 outline-borderStrong dark:outline-borderStrong-dark outline-offset-[3px];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
