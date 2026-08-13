@@ -14,7 +14,7 @@ import { NAV_LINKS } from "@/lib/data";
 import { AuthButton } from "./AuthButton";
 
 const themeToggleBtn =
-  "flex h-[30px] w-[30px] items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-transparent text-textSecondary dark:text-textSecondary-dark transition-all duration-[400ms] ease-smooth hover:rotate-[20deg] hover:border-borderStrong dark:hover:border-borderStrong-dark hover:text-textPrimary dark:hover:text-textPrimary-dark";
+  "flex h-9 w-9 md:h-[30px] md:w-[30px] items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-transparent text-textSecondary dark:text-textSecondary-dark transition-all duration-[400ms] ease-smooth hover:rotate-[20deg] hover:border-borderStrong dark:hover:border-borderStrong-dark hover:text-textPrimary dark:hover:text-textPrimary-dark";
 
 export default function FloatingNav() {
   const { theme, toggleTheme } = useTheme();
@@ -38,12 +38,12 @@ export default function FloatingNav() {
   const closeMobile = () => setMobileOpen(false);
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 top-0 z-[100] flex flex-col items-center p-[14px_20px]">
+    <div className="pointer-events-none fixed inset-x-0 top-0 z-[100] flex flex-col items-center p-3 sm:p-[14px_20px]">
       <motion.div
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-        className={`pointer-events-auto flex w-full max-w-shell items-center justify-between gap-0.5 rounded-full border border-borderc dark:border-borderc-dark p-[6px_6px_6px_14px] backdrop-blur-[20px] transition-shadow duration-300 ${
+        className={`pointer-events-auto flex w-full max-w-shell items-center justify-between gap-0.5 rounded-full border border-borderc dark:border-borderc-dark p-2.5 px-3.5 sm:p-[6px_6px_6px_14px] backdrop-blur-[20px] transition-shadow duration-300 ${
           scrolled
             ? "bg-white/85 shadow-[0_10px_40px_rgba(0,0,0,0.12)] dark:bg-[#121212]/85 dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)]"
             : "bg-white/60 shadow-none dark:bg-[#121212]/50"
@@ -52,12 +52,12 @@ export default function FloatingNav() {
         <Link
           href="/"
           onClick={closeMobile}
-          className="flex items-center gap-1.5"
+          className="flex items-center gap-2"
         >
-          <div className="flex h-5 w-5 items-center justify-center rounded-[5px] bg-textPrimary font-mono text-[10px] font-bold text-bg dark:bg-textPrimary-dark dark:text-bg-dark">
+          <div className="flex h-6 w-6 sm:h-5 sm:w-5 items-center justify-center rounded-[6px] sm:rounded-[5px] bg-textPrimary font-mono text-xs sm:text-[10px] font-bold text-bg dark:bg-textPrimary-dark dark:text-bg-dark">
             N
           </div>
-          <span className="font-mono text-xs font-semibold tracking-tight text-textPrimary dark:text-textPrimary-dark">
+          <span className="font-mono text-sm sm:text-xs font-semibold tracking-tight text-textPrimary dark:text-textPrimary-dark">
             nitindogra
           </span>
         </Link>
@@ -105,24 +105,24 @@ export default function FloatingNav() {
           <AuthButton variant="nav" />
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2.5 md:hidden">
           <button
             className={themeToggleBtn}
             onClick={toggleTheme}
             aria-label="Toggle theme"
           >
             <i
-              className={`${theme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon"} text-xs`}
+              className={`${theme === "dark" ? "fa-solid fa-sun" : "fa-solid fa-moon"} text-sm sm:text-xs`}
             />
           </button>
           <button
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="flex h-[30px] w-[30px] items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-transparent text-textPrimary dark:text-textPrimary-dark"
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-borderc dark:border-borderc-dark bg-transparent text-textPrimary dark:text-textPrimary-dark active:scale-95 transition-transform"
           >
             <i
-              className={`${mobileOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"} text-xs`}
+              className={`${mobileOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"} text-base sm:text-xs`}
             />
           </button>
         </div>
@@ -139,7 +139,7 @@ export default function FloatingNav() {
               className="fixed inset-0 z-[-1] bg-black/40 backdrop-blur-sm pointer-events-auto md:hidden"
             />
             <motion.div
-              className="mt-1.5 flex w-full max-w-shell flex-col rounded-2xl border border-borderc dark:border-borderc-dark bg-white/95 p-2 shadow-[0_10px_40px_rgba(0,0,0,0.12)] backdrop-blur-2xl dark:bg-[#121212]/95 dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] md:hidden pointer-events-auto"
+              className="mt-2 flex w-full max-w-shell flex-col rounded-2xl border border-borderc dark:border-borderc-dark bg-white/95 p-2.5 shadow-[0_10px_40px_rgba(0,0,0,0.12)] backdrop-blur-2xl dark:bg-[#121212]/95 dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] md:hidden pointer-events-auto"
               initial={{ opacity: 0, y: -8, scale: 0.98 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -8, scale: 0.98 }}
@@ -150,7 +150,7 @@ export default function FloatingNav() {
                   key={link.label}
                   href={link.href}
                   onClick={closeMobile}
-                  className="rounded-[9px] px-3 py-[11px] text-[13px] text-textSecondary dark:text-textSecondary-dark transition-all duration-200 hover:translate-x-0.5 hover:bg-borderc dark:hover:bg-borderc-dark hover:text-textPrimary dark:hover:text-textPrimary-dark active:bg-borderc dark:active:bg-borderc-dark"
+                  className="rounded-xl px-3.5 py-3 text-sm text-textSecondary dark:text-textSecondary-dark transition-all duration-200 hover:translate-x-0.5 hover:bg-borderc dark:hover:bg-borderc-dark hover:text-textPrimary dark:hover:text-textPrimary-dark active:bg-borderc dark:active:bg-borderc-dark"
                 >
                   {link.label}
                 </Link>

@@ -51,19 +51,11 @@ export function AuthProvider({
   }, []);
 
   const login = async () => {
-    const origin = typeof window !== "undefined" ? window.location.origin : "";
-    const redirectUrl = process.env.NEXT_PUBLIC_URL ? `${process.env.NEXT_PUBLIC_URL}/auth/callback` : `${origin}/auth/callback`;
-
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: {
-        redirectTo: redirectUrl,
-      },
+      options: { redirectTo: `${process.env.NEXT_URL}/auth/callback` },
     });
-
-    if (error) {
-      console.error(error);
-    }
+    if (error) console.error(error);
   };
 
   const logout = async () => {
