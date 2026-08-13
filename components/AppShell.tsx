@@ -7,7 +7,7 @@ import { ParallaxBackground } from "./ParallaxBackground";
 import { Terminal } from "./Terminal";
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
-  const { isAuth, toggleLogin } = useAuth();
+  const { isAuth } = useAuth();
 
   return (
     <div className="relative min-h-screen bg-bg dark:bg-bg-dark text-textPrimary dark:text-textPrimary-dark">

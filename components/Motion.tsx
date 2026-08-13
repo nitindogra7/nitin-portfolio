@@ -5,7 +5,17 @@ import { motion, Variants } from "framer-motion";
 export function useMagnetic(strength = 0.35, maxOffset = 10) {
   const ref = useRef<HTMLElement | null>(null);
   const [pos, setPos] = useState({ x: 0, y: 0 });
+
   const onMouseMove = (e: React.MouseEvent) => {
+    // Disable magnetic position movement on touch devices / coarse pointers
+    if (
+      typeof window !== "undefined" &&
+      (window.matchMedia("(pointer: coarse)").matches ||
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0)
+    ) {
+      return;
+    }
     const el = ref.current;
     if (!el) return;
     const rect = el.getBoundingClientRect();
@@ -16,7 +26,9 @@ export function useMagnetic(strength = 0.35, maxOffset = 10) {
       y: Math.max(-maxOffset, Math.min(maxOffset, relY * strength)),
     });
   };
+
   const onMouseLeave = () => setPos({ x: 0, y: 0 });
+
   return { ref, pos, handlers: { onMouseMove, onMouseLeave } };
 }
 

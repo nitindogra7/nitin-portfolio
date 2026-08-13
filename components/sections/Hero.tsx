@@ -41,13 +41,17 @@ function useTypewriter(words: string[], typeSpeed = 90, deleteSpeed = 45, pause 
 }
 
 function openCalendly() {
-  if (typeof window !== "undefined" && (window as any).Calendly) {
-    const isDark = document.documentElement.classList.contains("dark");
-    const bg = isDark ? "121212" : "fafafa";
-    const text = isDark ? "f2f2f2" : "121212";
-    (window as any).Calendly.initPopupWidget({
-      url: `https://calendly.com/your-link-here?background_color=${bg}&text_color=${text}&primary_color=121212`,
-    });
+  if (typeof window !== "undefined") {
+    if ((window as any).Calendly) {
+      const isDark = document.documentElement.classList.contains("dark");
+      const bg = isDark ? "121212" : "fafafa";
+      const text = isDark ? "f2f2f2" : "121212";
+      (window as any).Calendly.initPopupWidget({
+        url: `https://calendly.com/your-link-here?background_color=${bg}&text_color=${text}&primary_color=121212`,
+      });
+    } else {
+      window.open("https://calendly.com/your-link-here", "_blank", "noreferrer");
+    }
   }
   return false;
 }

@@ -130,26 +130,35 @@ export default function FloatingNav() {
 
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
-            className="mt-1.5 flex w-full max-w-shell flex-col rounded-2xl border border-borderc dark:border-borderc-dark bg-white/95 p-2 shadow-[0_10px_40px_rgba(0,0,0,0.12)] backdrop-blur-2xl dark:bg-[#121212]/95 dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] md:hidden pointer-events-auto"
-            initial={{ opacity: 0, y: -8, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -8, scale: 0.98 }}
-            transition={{ duration: 0.2 }}
-          >
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                onClick={closeMobile}
-                className="rounded-[9px] px-3 py-[11px] text-[13px] text-textSecondary dark:text-textSecondary-dark transition-all duration-200 hover:translate-x-0.5 hover:bg-borderc dark:hover:bg-borderc-dark hover:text-textPrimary dark:hover:text-textPrimary-dark"
-              >
-                {link.label}
-              </Link>
-            ))}
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={closeMobile}
+              className="fixed inset-0 z-[-1] bg-black/40 backdrop-blur-sm pointer-events-auto md:hidden"
+            />
+            <motion.div
+              className="mt-1.5 flex w-full max-w-shell flex-col rounded-2xl border border-borderc dark:border-borderc-dark bg-white/95 p-2 shadow-[0_10px_40px_rgba(0,0,0,0.12)] backdrop-blur-2xl dark:bg-[#121212]/95 dark:shadow-[0_10px_40px_rgba(0,0,0,0.5)] md:hidden pointer-events-auto"
+              initial={{ opacity: 0, y: -8, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: -8, scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+            >
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  onClick={closeMobile}
+                  className="rounded-[9px] px-3 py-[11px] text-[13px] text-textSecondary dark:text-textSecondary-dark transition-all duration-200 hover:translate-x-0.5 hover:bg-borderc dark:hover:bg-borderc-dark hover:text-textPrimary dark:hover:text-textPrimary-dark active:bg-borderc dark:active:bg-borderc-dark"
+                >
+                  {link.label}
+                </Link>
+              ))}
 
-            <AuthButton variant="mobile" onClickCallback={closeMobile} />
-          </motion.div>
+              <AuthButton variant="mobile" onClickCallback={closeMobile} />
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </div>

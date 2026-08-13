@@ -8,7 +8,7 @@ import { AuthButton } from "@/components/AuthButton";
 import { LOGS } from "@/lib/data";
 
 export default function LogsPage() {
-  const { isAuth, toggleLogin } = useAuth();
+  const { isAuth } = useAuth();
   const [logs, setLogs] = useState(LOGS);
   const [draft, setDraft] = useState("");
 

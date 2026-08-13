@@ -122,7 +122,14 @@ export function Terminal() {
           {/* Header */}
           <div className="flex h-10 cursor-grab items-center justify-between border-b border-borderc bg-borderc/30 px-4 active:cursor-grabbing dark:border-borderc-dark dark:bg-borderc-dark/30">
             <div className="flex items-center gap-2">
-              <div className="h-3 w-3 rounded-full bg-red-500 cursor-pointer" onClick={() => setIsOpen(false)} />
+              <button
+                type="button"
+                aria-label="Close terminal"
+                className="flex h-5 w-5 items-center justify-center rounded-full transition-transform active:scale-90"
+                onClick={() => setIsOpen(false)}
+              >
+                <div className="h-3 w-3 rounded-full bg-red-500" />
+              </button>
               <div className="h-3 w-3 rounded-full bg-yellow-500" />
               <div className="h-3 w-3 rounded-full bg-green-500" />
             </div>

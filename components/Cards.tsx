@@ -72,8 +72,18 @@ export function MediaCard({
 }
 
 export function ProjectMediaCard({ p, i, href }: { p: any; i: number; href?: string }) {
-  const inner = (
-    <>
+  return (
+    <motion.div
+      className={cardBase}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, margin: "-40px" }}
+      variants={blurUp}
+      custom={i * 0.5}
+    >
+      {href && (
+        <Link href={href} className="absolute inset-0 z-0" aria-label={`View ${p.name}`} />
+      )}
       <div className={thumbBase}>
         <img
           src={p.image}
@@ -81,34 +91,32 @@ export function ProjectMediaCard({ p, i, href }: { p: any; i: number; href?: str
           loading="lazy"
           className="block h-full w-full scale-100 object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.19,1,0.22,1)] will-change-transform [backface-visibility:hidden] group-hover:scale-[1.035]"
         />
-        <div className="absolute right-2.5 top-2.5 z-10 flex gap-1.5">
+        <div className="absolute right-2.5 top-2.5 z-20 flex gap-1.5 pointer-events-auto">
           {p.github && (
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                window.open(p.github, "_blank", "noreferrer");
-              }}
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/85 px-3 py-1.5 text-[10.5px] font-bold text-white backdrop-blur-md transition-all duration-[350ms] ease-smooth hover:-translate-y-0.5 hover:bg-black"
+            <a
+              href={p.github}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/85 px-3 py-1.5 text-[10.5px] font-bold text-white backdrop-blur-md transition-all duration-[350ms] ease-smooth hover:-translate-y-0.5 hover:bg-black active:scale-95"
             >
               <i className="fa-brands fa-github" /> Code
-            </button>
+            </a>
           )}
           {p.live && (
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                window.open(p.live, "_blank", "noreferrer");
-              }}
-              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/85 px-3 py-1.5 text-[10.5px] font-bold text-white backdrop-blur-md transition-all duration-[350ms] ease-smooth hover:-translate-y-0.5 hover:bg-black"
+            <a
+              href={p.live}
+              target="_blank"
+              rel="noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-black/85 px-3 py-1.5 text-[10.5px] font-bold text-white backdrop-blur-md transition-all duration-[350ms] ease-smooth hover:-translate-y-0.5 hover:bg-black active:scale-95"
             >
               <i className="fa-solid fa-globe" /> Live
-            </button>
+            </a>
           )}
         </div>
       </div>
-      <div className="flex flex-1 flex-col p-[18px_18px_20px]">
+      <div className="flex flex-1 flex-col p-[18px_18px_20px] pointer-events-none">
         <div className="mb-1 flex items-start justify-between gap-2.5">
           <h4 className="text-[16px] font-bold leading-tight tracking-tight text-textPrimary dark:text-textPrimary-dark">{p.name}</h4>
           <span className="flex h-[26px] w-[26px] flex-shrink-0 items-center justify-center rounded-full border border-borderc dark:border-borderc-dark text-textSecondary dark:text-textSecondary-dark transition-all duration-[400ms] ease-smooth group-hover:rotate-45 group-hover:border-borderStrong dark:group-hover:border-borderStrong-dark group-hover:text-textPrimary dark:group-hover:text-textPrimary-dark">
@@ -128,23 +136,6 @@ export function ProjectMediaCard({ p, i, href }: { p: any; i: number; href?: str
           ))}
         </div>
       </div>
-    </>
-  );
-
-  const Comp: any = href ? motion.create(Link) : motion.div;
-  const extra = href ? { href } : {};
-
-  return (
-    <Comp
-      {...extra}
-      className={cardBase}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, margin: "-40px" }}
-      variants={blurUp}
-      custom={i * 0.5}
-    >
-      {inner}
-    </Comp>
+    </motion.div>
   );
 }

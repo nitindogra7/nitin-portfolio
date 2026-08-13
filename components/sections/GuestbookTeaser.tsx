@@ -11,7 +11,7 @@ const pillBtn =
   "inline-flex cursor-pointer items-center gap-1.5 rounded-full border border-borderc dark:border-borderc-dark px-3.5 py-2 text-[11px] font-semibold transition-all duration-[350ms] ease-smooth hover:-translate-y-0.5 hover:border-borderStrong dark:hover:border-borderStrong-dark bg-surface text-textPrimary dark:bg-surface-dark dark:text-textPrimary-dark";
 
 export default function GuestbookTeaser() {
-  const { isAuth, toggleLogin } = useAuth();
+  const { isAuth } = useAuth();
   const [logs, setLogs] = useState(LOGS.slice(0, 2));
   const [draft, setDraft] = useState("");
 
