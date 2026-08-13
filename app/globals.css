@@ -28,6 +28,7 @@
   }
   button, a, input, textarea, select {
     touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
   button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
     @apply outline outline-2 outline-borderStrong dark:outline-borderStrong-dark outline-offset-[3px];
