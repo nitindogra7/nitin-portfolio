@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 
 export function useMagnetic(strength = 0.35, maxOffset = 10) {
@@ -42,6 +42,32 @@ export function Magnetic({
   ...rest
 }: any) {
   const { ref, pos, handlers } = useMagnetic(strength, maxOffset);
+  const [isTouch, setIsTouch] = useState(false);
+
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      (window.matchMedia("(pointer: coarse)").matches ||
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0)
+    ) {
+      setIsTouch(true);
+    }
+  }, []);
+
+  if (isTouch) {
+    const { whileTap, whileHover, ...cleanRest } = rest;
+    return (
+      <Comp
+        className={className}
+        style={style}
+        {...cleanRest}
+      >
+        {children}
+      </Comp>
+    );
+  }
+
   return (
     <Comp
       ref={ref}

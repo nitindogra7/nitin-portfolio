@@ -51,9 +51,10 @@ export function AuthProvider({
   }, []);
 
   const login = async () => {
+    const redirectTo = `${window.location.origin}/auth/callback`;
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
-      options: { redirectTo: `${process.env.NEXT_URL}/auth/callback` },
+      options: { redirectTo },
     });
     if (error) console.error(error);
   };
