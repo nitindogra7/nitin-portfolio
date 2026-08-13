@@ -6,9 +6,9 @@ import { AuthProvider } from "@/components/AuthProvider";
 import AppShell from "@/components/AppShell";
 
 export const metadata: Metadata = {
-  title: "Nitin Dogra | Software Engineer",
+  title: "nitindogra — Software Engineer Portfolio & Interactive Guestbook",
   description:
-    "Nitin Dogra — full-stack software engineer building scalable, production-ready web applications with Next.js, React and Node.js.",
+    "nitindogra is a developer portfolio & interactive guestbook web app. Sign in with Google to post verified system logs and leave public messages.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

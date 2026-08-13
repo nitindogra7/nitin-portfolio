@@ -34,7 +34,7 @@ export default function GuestbookTeaser() {
       </Reveal>
       <Reveal delay={0.4}>
         <p className="mb-3.5 font-mono text-[11px] text-textSecondary dark:text-textSecondary-dark">
-          &gt; Leave a public trace. Login with Google to add to the log.
+          &gt; nitindogra App Purpose: Sign in with Google to post verified public system logs and guestbook messages.
         </p>
       </Reveal>
       <Reveal delay={0.5} className="mb-6">
@@ -43,10 +43,10 @@ export default function GuestbookTeaser() {
             <div className="py-6 text-center">
               <i className="mb-2.5 block text-2xl text-textMuted dark:text-textMuted-dark fa-solid fa-lock" />
               <p className="mb-1 text-xs font-semibold text-textPrimary dark:text-textPrimary-dark">
-                Authentication Required
+                Google Authentication Required
               </p>
-              <p className="mb-3.5 text-[10.5px] text-textSecondary dark:text-textSecondary-dark">
-                You must be logged in to leave a system log.
+              <p className="mb-3.5 text-[10.5px] text-textSecondary dark:text-textSecondary-dark max-w-sm mx-auto">
+                Authentication with Google verifies your user identity to submit public logs and guestbook notes on nitindogra.
               </p>
               <AuthButton className="mx-auto" />
             </div>
