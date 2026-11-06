@@ -70,6 +70,7 @@ export default function RootLayout({
       </head>
       <body>
         <NavigationProvider>
+          <Analytics />
           <MarginRules />
           <Rails />
           <PageOrbit />
@@ -79,7 +80,6 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Toast />
-          <Analytics />
           <ClientInteractiveController />
         </NavigationProvider>
       </body>
