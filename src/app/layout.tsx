@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import MarginRules from "@/components/MarginRules";
+import { Analytics } from "@vercel/analytics/next"
 import Rails from "@/components/Rails";
 import PageOrbit from "@/components/PageOrbit";
 import Toast from "@/components/Toast";
@@ -75,6 +76,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <Toast />
+          <Analytics />
           <ClientInteractiveController />
         </NavigationProvider>
       </body>

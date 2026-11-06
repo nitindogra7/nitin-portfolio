@@ -18,7 +18,7 @@ export default function ContactForm() {
       </div>
       <form
         className="contact-form"
-        action="https://server.infraly.online/api/forms-and-api/f/portfolio-nitin"
+        action="https://server.infraly.online/api/forms-and-api/f/nitin-portfolio"
         method="POST"
         onSubmit={setThankYouRedirect}
       >
