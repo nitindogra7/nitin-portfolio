@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   description:
     "Nitin Dogra is a full stack developer in Delhi, India, building web applications from interface to database with React, Next.js, Node.js, and PostgreSQL.",
   applicationName: "Nitin Dogra Portfolio",
+  icons: {
+    icon: "/icon.svg",
+  },
   openGraph: {
     type: "website",
     siteName: "Nitin Dogra Portfolio",
