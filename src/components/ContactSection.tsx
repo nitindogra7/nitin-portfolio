@@ -47,7 +47,7 @@ export default function ContactSection() {
       <SectionTitle>Good work starts with a hello.</SectionTitle>
       <p>Have a role or a project in mind? I’d love to hear about it.</p>
       <div className="actions flex flex-wrap items-center gap-2.5">
-        <a className="btn primary" href="mailto:dogranitin579@gmail.com">
+        <a className="btn primary" href="/contact">
           Get in touch{" "}
           <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
         </a>

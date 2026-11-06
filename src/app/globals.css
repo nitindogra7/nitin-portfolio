@@ -2127,6 +2127,13 @@ details ul {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 14%, transparent);
 }
 
+@media (max-width: 600px) {
+  .contact-field input,
+  .contact-field textarea {
+    font-size: 16px;
+  }
+}
+
 .contact-form-actions {
   display: flex;
   flex-wrap: wrap;
@@ -2337,7 +2344,6 @@ details ul {
     transition-duration: .01ms;
   }
 }
-
 
 
 
