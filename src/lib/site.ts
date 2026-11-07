@@ -18,7 +18,10 @@ export function absoluteUrl(path: string) {
 }
 
 export const socialImage = [
-  { url: absoluteUrl("/avatar.png"), alt: "Portrait of Nitin Dogra, Full Stack Developer" },
+  {
+    url: absoluteUrl("/avatar.png"),
+    alt: "Nitin Dogra — Full-Stack Developer in Delhi — Next.js, SaaS & Web Apps",
+  },
 ];
 
 export function pageSocialMetadata(title: string, description: string, path: string) {

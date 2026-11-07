@@ -43,7 +43,7 @@ const projectsData: ProjectItem[] = [
     liveUrl: "https://infraly.online",
     sourceUrl: "https://github.com/nitindogra7/crm",
     thumbnail: "/projects/infraly.png",
-    imageAlt: "Infraly developer form backend and lead CRM web application interface",
+    imageAlt: "Nitin Dogra — Full-Stack Developer in Delhi — Infraly developer form backend and lead CRM built with Next.js and TypeScript",
     visual: <div className="mini-app"><div className="mini-top"><b>infraly.</b><span className="mini-dots">...</span></div><p style={{ fontSize: "11px", fontWeight: 600, margin: "12px 0 0" }}>Turn website enquiries into your next customers.</p></div>,
   },
   {
@@ -58,7 +58,7 @@ const projectsData: ProjectItem[] = [
     liveUrl: "https://get-me-chai-seven.vercel.app",
     sourceUrl: "https://github.com/nitindogra7/getMeChai",
     thumbnail: "/projects/getmechai.png",
-    imageAlt: "GetMeChai creator funding platform interface showing one-click supporter flow",
+    imageAlt: "Nitin Dogra — Full-Stack Developer in Delhi — GetMeChai creator platform with Razorpay payments built with Next.js and PostgreSQL",
     visual: (
       <div className="mini-app">
         <div className="mini-top">
@@ -89,7 +89,7 @@ const projectsData: ProjectItem[] = [
     liveUrl: "https://logocraft.nitindogra.space/",
     sourceUrl: "https://github.com/nitindogra7/logoCraft",
     thumbnail: "/projects/logocraft.png",
-    imageAlt: "LogoCraft AI vector logo generation studio interface with credit billing",
+    imageAlt: "Nitin Dogra — Full-Stack Developer in Delhi — LogoCraft AI vector logo generator built with React and Express",
     visual: (
       <div className="mini-app">
         <div className="mini-top">
@@ -124,7 +124,7 @@ export default function ProjectsSection() {
     <section
       className={`section ${activeSection === "work" || pathname === "/work" ? "is-current" : ""}`}
       id="work"
-      aria-label="Selected full-stack web applications and engineering projects"
+      aria-label="Full-Stack Web Apps & SaaS Projects by Nitin Dogra"
     >
       <div className="section-head">
         <SectionTitle className="title">
@@ -211,8 +211,8 @@ export default function ProjectsSection() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Visit live production deployment of ${project.title}`}
-                  title={`Visit live deployment of ${project.title}`}
+                  aria-label={`Visit live production deployment of ${project.title} by Nitin Dogra`}
+                  title={`Visit live deployment of ${project.title} by Nitin Dogra`}
                 >
                   Live website{" "}
                   <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
@@ -221,8 +221,8 @@ export default function ProjectsSection() {
                   href={project.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`View ${project.title} source code repository on GitHub`}
-                  title={`View ${project.title} source code repository on GitHub`}
+                  aria-label={`View ${project.title} source code repository by Nitin Dogra on GitHub`}
+                  title={`View ${project.title} source code repository by Nitin Dogra on GitHub`}
                 >
                   Source code{" "}
                   <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />

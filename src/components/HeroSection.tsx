@@ -49,7 +49,7 @@ return (
     <section
       className="hero"
       id="home"
-      aria-label="Full-stack developer overview and background"
+      aria-label="Nitin Dogra — Full-Stack Developer & SaaS MVP Engineer in New Delhi, India"
     >
       <svg className="hero-branches" aria-hidden="true" viewBox="0 0 295 205">
         <path className="branch" d="M25 53H280M25 143H280M152 53C191 53 174 17 217 17H280" />
@@ -72,7 +72,7 @@ return (
           <figure className="hero-portrait">
             <Image
               src="/avatar.png"
-              alt="Portrait of Nitin Dogra, Full Stack Developer in Delhi, India"
+              alt="Portrait of Nitin Dogra, Full-Stack Developer in New Delhi, India building SaaS MVPs and web applications"
               width={100}
               height={100}
               priority
@@ -91,7 +91,7 @@ return (
           <a
             className="btn primary"
             href="#work"
-            aria-label="Explore featured full-stack web projects and case studies"
+            aria-label="Explore featured full-stack web projects and SaaS MVPs by Nitin Dogra"
           >
             Explore my work{" "}
             <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />

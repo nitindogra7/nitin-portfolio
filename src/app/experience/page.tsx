@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import { pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
-const title = "Full Stack Development Experience | Nitin Dogra";
+const title = "Full-Stack Development Experience | Nitin Dogra";
 const description =
-  "Review Nitin Dogra’s engineering internships across Next.js, Express, Supabase, and REST APIs. Production feature delivery, JWT auth, and frontend performance.";
+  "Review Nitin Dogra's engineering experience across Next.js, Express, Supabase, and REST APIs. Production feature delivery, JWT auth, and frontend performance in Delhi, India.";
 
 export const metadata: Metadata = {
   title,

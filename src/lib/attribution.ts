@@ -11,6 +11,7 @@ function detectReferrerSource(referrer: string): string {
     if (host.includes("perplexity.ai")) return "perplexity";
     if (host.includes("claude.ai")) return "claude";
     if (host.includes("gemini.google.com")) return "gemini";
+    if (host.includes("contra.com")) return "contra";
     if (host.includes("google.")) return "google-search";
     if (host.includes("bing.")) return "bing-search";
     if (host.includes("github.com")) return "github";

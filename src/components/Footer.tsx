@@ -19,7 +19,7 @@ export default function Footer() {
     <footer className="footer" aria-label="Site footer and social profiles">
       <span>
         © <span id="current-year" suppressHydrationWarning>{year}</span> Nitin Dogra{" "}
-        <span style={{ margin: "0 6px" }}>/</span> New Delhi • Remote Worldwide
+        <span style={{ margin: "0 6px" }}>/</span> New Delhi, India • Worldwide
       </span>
       <div className="footer-links">
         <a

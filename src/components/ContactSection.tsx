@@ -40,7 +40,7 @@ export default function ContactSection() {
     <section
       className={`section contact ${activeSection === "contact" || pathname === "/contact" ? "is-current" : ""}`}
       id="contact"
-      aria-label="Contact and collaboration inquiries"
+      aria-label="Contact Nitin Dogra for full-stack web development and SaaS MVP projects"
     >
       <div className="eyebrow mono" style={{ marginBottom: "14px" }}>
         <span className="dot" /> LET’S BUILD SOMETHING
@@ -51,7 +51,7 @@ export default function ContactSection() {
         <a
           className="btn primary"
           href="/contact"
-          aria-label="Navigate to contact form to start a project or role discussion"
+          aria-label="Navigate to contact form to hire Nitin Dogra or start a SaaS MVP project"
           title="Navigate to contact form"
         >
           Get in touch{" "}

@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import { pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
-const title = "Selected Web Projects & Architecture | Nitin Dogra";
+const title = "Selected Web Projects & SaaS MVPs | Nitin Dogra";
 const description =
-  "Production web applications built with Next.js, Express, PostgreSQL, and TypeScript. Featuring developer tooling, creator platforms, and AI-powered systems.";
+  "Production web applications and SaaS MVPs built by Nitin Dogra with Next.js, Express, PostgreSQL, Supabase, and TypeScript. Featuring Infraly, GetMeChai, and LogoCraft.";
 
 export const metadata: Metadata = {
   title,

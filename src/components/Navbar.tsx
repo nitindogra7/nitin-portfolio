@@ -91,7 +91,7 @@ export default function Navbar() {
         </div>
         <div className="nav-actions">
           <div className="nav-social-links">
-            <a className="icon-button nav-social-link" href="https://github.com/nitindogra7" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <a className="icon-button nav-social-link" href="https://github.com/nitindogra7" target="_blank" rel="noopener noreferrer" aria-label="Nitin Dogra on GitHub" title="Nitin Dogra on GitHub">
               <SiGithub aria-hidden="true" />
             </a>
 

@@ -2,9 +2,17 @@ import { absoluteUrl, siteLastModified } from "./site";
 
 export function generateRootSchemaGraph() {
   const websiteId = absoluteUrl("/#website");
-  const personId = absoluteUrl("/#person");
+  const personId = absoluteUrl("/#nitin-dogra");
   const businessId = absoluteUrl("/#business");
   const profilePageId = absoluteUrl("/#profilepage");
+
+  const verifiedSameAs = [
+    "https://contra.com/nitin_dogra_pxqoz8k2",
+    "https://contra.com/nitin_dogra_pxqoz8k2/about",
+    "https://github.com/nitindogra7",
+    "https://linkedin.com/in/nitin-dogra-025497255",
+    "https://x.com/nitindogra_77",
+  ];
 
   return {
     "@context": "https://schema.org",
@@ -13,9 +21,10 @@ export function generateRootSchemaGraph() {
         "@type": "WebSite",
         "@id": websiteId,
         url: absoluteUrl("/"),
-        name: "Nitin Dogra | Full Stack Developer",
+        name: "Nitin Dogra Portfolio",
+        alternateName: "Nitin — Full Stack Developer Delhi",
         description:
-          "Portfolio and technical case studies of Nitin Dogra, a Delhi-based Full Stack Developer specializing in Next.js, Node.js, and PostgreSQL.",
+          "Official portfolio of Nitin Dogra (Nitin), Full-Stack Developer and SaaS MVP Engineer in New Delhi, India building fast web applications with Next.js, React, Node.js, and Supabase.",
         inLanguage: "en-IN",
         publisher: {
           "@id": personId,
@@ -25,7 +34,7 @@ export function generateRootSchemaGraph() {
         "@type": "ProfilePage",
         "@id": profilePageId,
         url: absoluteUrl("/"),
-        name: "Nitin Dogra — Full Stack Developer & Next.js Engineer",
+        name: "Nitin Dogra — Full-Stack Developer & SaaS MVP Engineer",
         isPartOf: {
           "@id": websiteId,
         },
@@ -39,47 +48,87 @@ export function generateRootSchemaGraph() {
         "@type": "Person",
         "@id": personId,
         name: "Nitin Dogra",
-        jobTitle: "Full Stack Developer",
+        givenName: "Nitin",
+        familyName: "Dogra",
+        alternateName: [
+          "Nitin",
+          "Nitin Dogra Full Stack Developer",
+          "Nitin Developer Delhi",
+          "nitin_dogra",
+          "Nitin Dogra Developer",
+          "Nitin Web Developer",
+          "Nitin Software Engineer India",
+        ],
+        jobTitle: "Full-Stack Developer & SaaS MVP Engineer",
         description:
-          "Delhi-based full stack developer building high-performance web applications with React, Next.js, TypeScript, Node.js, and PostgreSQL.",
+          "Independent Full-Stack Developer based in New Delhi, Delhi NCR, India, building high-converting websites, SaaS MVPs, Micro-SaaS products, web automation, and scalable full-stack web applications using Next.js, React, Node.js, TypeScript, Tailwind CSS, and Supabase for startups and businesses worldwide.",
         url: absoluteUrl("/"),
         image: absoluteUrl("/avatar.png"),
         email: "mailto:dogranitin579@gmail.com",
-        telephone: undefined,
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Delhi",
-          addressRegion: "Delhi",
-          addressCountry: "IN",
+        homeLocation: {
+          "@type": "Place",
+          name: "New Delhi, Delhi NCR, India",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "New Delhi",
+            addressRegion: "Delhi",
+            addressCountry: "IN",
+          },
+        },
+        workLocation: {
+          "@type": "Place",
+          name: "New Delhi, Delhi NCR, India",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "New Delhi",
+            addressRegion: "Delhi",
+            addressCountry: "IN",
+          },
         },
         alumniOf: {
           "@type": "CollegeOrUniversity",
           name: "Maharishi University of Information Technology",
         },
-        sameAs: [
-          "https://github.com/nitindogra7",
-          "https://linkedin.com/in/nitin-dogra-025497255",
-          "https://x.com/nitindogra_77",
-        ],
+        sameAs: verifiedSameAs,
         knowsAbout: [
-          "Full-Stack Web Development",
-          "Next.js App Router & Server Components",
-          "React 19",
+          "Next.js",
+          "Next.js App Router",
+          "React.js",
           "TypeScript",
-          "Node.js & Express.js",
-          "PostgreSQL & Prisma ORM",
+          "Node.js",
           "Supabase",
-          "RESTful API Design & Integration",
           "Tailwind CSS",
-          "Payment Systems (Razorpay)",
-          "Authentication (JWT, Clerk)",
-          "Web Performance & Core Web Vitals",
+          "PostgreSQL",
+          "Prisma ORM",
+          "SaaS MVP Development",
+          "Micro-SaaS Development",
+          "Full-Stack Web Applications",
+          "Web Automation",
+          "Figma to Next.js",
+          "Figma to React",
+          "Serverless Web App Development",
+          "Vercel Deployment & Performance Optimization",
+          "REST & GraphQL API Development",
+          "NextAuth / Auth.js Integration",
+          "Stripe & Razorpay Payment Integration",
+          "Real-time Web Applications",
+          "Modern JavaScript ES6+",
+          "Shadcn UI & Radix UI",
+          "Framer Motion",
+          "Core Web Vitals & Technical SEO",
+          "AI API Integration (OpenAI, Claude, LLM apps)",
+          "Web Automation & Workflow Engineering",
+          "Headless CMS (Sanity, Strapi)",
+          "Progressive Web Apps (PWA)",
+          "B2B SaaS Dashboard Development",
+          "Clean UI and Design Systems",
+          "High-Converting Landing Pages",
         ],
       },
       {
         "@type": "ProfessionalService",
         "@id": businessId,
-        name: "Nitin Dogra — Full Stack Web Engineering",
+        name: "Nitin Dogra — Full-Stack Developer & SaaS MVP Engineering",
         url: absoluteUrl("/"),
         logo: absoluteUrl("/avatar.png"),
         image: absoluteUrl("/avatar.png"),
@@ -88,64 +137,103 @@ export function generateRootSchemaGraph() {
         },
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Delhi",
+          addressLocality: "New Delhi",
           addressRegion: "Delhi",
           addressCountry: "IN",
         },
         areaServed: [
-          "Worldwide",
+          "New Delhi",
+          "Delhi NCR",
+          "Gurgaon",
+          "Noida",
           "India",
           "United States",
           "United Kingdom",
-          "European Union",
-          "Asia-Pacific",
+          "Worldwide",
         ],
         priceRange: "$$",
-        sameAs: [
-          "https://github.com/nitindogra7",
-          "https://linkedin.com/in/nitin-dogra-025497255",
-          "https://x.com/nitindogra_77",
-        ],
+        sameAs: verifiedSameAs,
         hasOfferCatalog: {
           "@type": "OfferCatalog",
-          name: "Full Stack Engineering Services",
+          name: "Full Stack & SaaS MVP Engineering Services",
           itemListElement: [
             {
               "@type": "OfferCatalog",
-              name: "Full-Stack Web Application Development",
+              name: "Full-Stack Web App Development",
               itemListElement: [
                 {
                   "@type": "Service",
-                  name: "Full-Stack Web Application Development",
+                  name: "Full-Stack Web App Development",
                   description:
-                    "End-to-end web application development from architecture and database modeling to high-performance Next.js frontends and verified cloud deployment.",
+                    "End-to-end web applications with Next.js App Router, TypeScript, Node.js, and PostgreSQL/Supabase. High performance, sub-second loads, resilient database schemas, and cloud deployment.",
                   provider: { "@id": personId },
+                  areaServed: "Worldwide",
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "USD",
+                    availability: "https://schema.org/InStock",
+                    url: absoluteUrl("/contact"),
+                  },
                 },
               ],
             },
             {
               "@type": "OfferCatalog",
-              name: "API & Backend Systems Architecture",
+              name: "SaaS MVP & Micro-SaaS Development",
               itemListElement: [
                 {
                   "@type": "Service",
-                  name: "API & Backend Systems Architecture",
+                  name: "SaaS MVP & Micro-SaaS Development",
                   description:
-                    "Scalable Node.js and Express RESTful API development, webhook processing pipelines, secure JWT/OAuth authentication, and PostgreSQL/Prisma query optimization.",
+                    "Turn ideas into revenue-generating SaaS MVPs in 2-4 weeks. Complete with user authentication (Clerk/Auth.js), payment integration (Stripe/Razorpay), database modeling, and billing dashboards.",
                   provider: { "@id": personId },
+                  areaServed: "Worldwide",
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "USD",
+                    availability: "https://schema.org/InStock",
+                    url: absoluteUrl("/contact"),
+                  },
                 },
               ],
             },
             {
               "@type": "OfferCatalog",
-              name: "Next.js Frontend Architecture & Performance Tuning",
+              name: "Landing Page Design & Development (Figma to Next.js)",
               itemListElement: [
                 {
                   "@type": "Service",
-                  name: "Next.js Frontend Architecture & Performance Tuning",
+                  name: "Landing Page Design & Development (Figma to Next.js)",
                   description:
-                    "Core Web Vitals remediation, server-side caching, bundle reduction, and responsive modern UI implementations using Tailwind CSS.",
+                    "High-converting marketing landing pages converted pixel-perfectly from Figma designs into fast Next.js & Tailwind CSS code with top Core Web Vitals and SEO performance.",
                   provider: { "@id": personId },
+                  areaServed: "Worldwide",
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "USD",
+                    availability: "https://schema.org/InStock",
+                    url: absoluteUrl("/contact"),
+                  },
+                },
+              ],
+            },
+            {
+              "@type": "OfferCatalog",
+              name: "Web Automation & AI Integration",
+              itemListElement: [
+                {
+                  "@type": "Service",
+                  name: "Web Automation & AI Integration",
+                  description:
+                    "Custom backend automation workflows, webhook processing pipelines, web scraping solutions, and LLM/AI integrations (OpenAI, Claude, Hugging Face) for modern web applications.",
+                  provider: { "@id": personId },
+                  areaServed: "Worldwide",
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "USD",
+                    availability: "https://schema.org/InStock",
+                    url: absoluteUrl("/contact"),
+                  },
                 },
               ],
             },
@@ -172,7 +260,12 @@ export function generateRootSchemaGraph() {
           "Form Backend",
           "CRM",
           "Clerk Auth",
+          "SaaS MVP",
+          "Developer Tooling",
         ],
+        author: {
+          "@id": personId,
+        },
         creator: {
           "@id": personId,
         },
@@ -196,7 +289,11 @@ export function generateRootSchemaGraph() {
           "Razorpay",
           "Creator Economy",
           "Payments",
+          "Micro-SaaS",
         ],
+        author: {
+          "@id": personId,
+        },
         creator: {
           "@id": personId,
         },
@@ -219,7 +316,11 @@ export function generateRootSchemaGraph() {
           "Hugging Face",
           "AI Logo Generator",
           "Vector Branding",
+          "AI API Integration",
         ],
+        author: {
+          "@id": personId,
+        },
         creator: {
           "@id": personId,
         },

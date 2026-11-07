@@ -5,9 +5,9 @@ import Footer from "@/components/Footer";
 import { pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
-const title = "Contact Nitin Dogra | Full Stack Developer Roles & Projects";
+const title = "Hire Nitin Dogra | Full-Stack Developer & SaaS MVP Engineer";
 const description =
-  "Get in touch with Nitin Dogra for full stack developer roles, web application contracts, and engineering collaboration. Based in Delhi, working remotely worldwide.";
+  "Hire Nitin Dogra for full-stack web applications, SaaS MVP builds, and Next.js engineering. Based in New Delhi, Delhi NCR, India, working with clients worldwide.";
 
 export const metadata: Metadata = {
   title,

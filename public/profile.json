@@ -1,49 +1,137 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "name": "Nitin Dogra",
-  "title": "Full Stack Developer",
-  "bio": "Delhi-based full stack developer building high-performance web applications with React, Next.js, Node.js, and PostgreSQL.",
+  "alternateName": [
+    "Nitin",
+    "Nitin Dogra Developer",
+    "Nitin Full Stack Developer",
+    "Nitin Developer Delhi",
+    "Nitin Web Developer",
+    "Nitin Software Engineer India"
+  ],
+  "title": "Full-Stack Developer & SaaS MVP Engineer",
+  "bio": "Independent Full-Stack Developer based in New Delhi, Delhi NCR, India, building high-converting websites, SaaS MVPs, Micro-SaaS products, web automation, and scalable full-stack web applications using Next.js, React, Node.js, TypeScript, Tailwind CSS, and Supabase for startups and businesses worldwide.",
   "canonicalUrl": "https://nitindogra.space",
   "email": "dogranitin579@gmail.com",
   "location": {
-    "city": "Delhi",
-    "state": "Delhi",
+    "city": "New Delhi",
+    "region": "Delhi NCR",
     "country": "India",
     "timezone": "Asia/Kolkata (UTC+5:30)",
-    "remote": "Worldwide with US/EU/APAC overlap"
+    "remote": "Worldwide with dedicated US (EST/PST) and EU (GMT/CET) overlap"
   },
-  "status": "Available for contract projects and full-stack engineering roles",
+  "areaServed": [
+    "New Delhi",
+    "Delhi NCR",
+    "Gurgaon",
+    "Noida",
+    "India",
+    "United States",
+    "United Kingdom",
+    "Worldwide"
+  ],
+  "status": "Available for SaaS MVP builds, full-stack contracts, and engineering retainers",
   "bookingUrl": "https://nitindogra.space/contact",
   "socialLinks": {
+    "contra": "https://contra.com/nitin_dogra_pxqoz8k2",
+    "contraAbout": "https://contra.com/nitin_dogra_pxqoz8k2/about",
     "github": "https://github.com/nitindogra7",
     "linkedin": "https://linkedin.com/in/nitin-dogra-025497255",
     "x": "https://x.com/nitindogra_77"
   },
   "skills": {
     "languages": ["TypeScript", "JavaScript", "SQL", "HTML5", "CSS3"],
-    "frontend": ["Next.js (App Router)", "React 19", "Tailwind CSS", "Server Components"],
-    "backend": ["Node.js", "Express.js", "REST APIs", "JWT", "OAuth"],
+    "frontend": [
+      "Next.js 16 (App Router)",
+      "React 19",
+      "Tailwind CSS v4",
+      "Server Components",
+      "Shadcn UI",
+      "Framer Motion"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js 5",
+      "REST & GraphQL APIs",
+      "JWT & OAuth 2.0",
+      "Webhook Ingestion",
+      "Server-Sent Events"
+    ],
     "databases": ["PostgreSQL", "Supabase", "Prisma ORM", "MongoDB"],
-    "tooling": ["Git", "GitHub Actions", "Vercel", "Razorpay", "Clerk"]
+    "tooling": [
+      "Git & GitHub Actions",
+      "Vercel",
+      "Razorpay",
+      "Stripe",
+      "Clerk",
+      "Postman",
+      "Cloudinary"
+    ],
+    "specialties": [
+      "SaaS MVP Development",
+      "Micro-SaaS Engineering",
+      "High-Converting Landing Pages",
+      "Web Automation",
+      "Core Web Vitals & Technical SEO"
+    ]
   },
   "services": [
     {
-      "name": "Full-Stack Web Application Development",
+      "name": "Full-Stack Web App Development",
       "description": "Production-ready web apps from Figma to database schema, API logic, and Vercel deployment.",
-      "deliverables": ["Interactive UI", "PostgreSQL database", "Authenticated APIs", "Deployment"],
-      "timeline": "2-4 weeks"
+      "deliverables": [
+        "Interactive UI in Next.js",
+        "PostgreSQL / Supabase database",
+        "Authenticated REST APIs",
+        "Cloud deployment & CI/CD"
+      ],
+      "timeline": "2-4 weeks",
+      "pricingModel": "Fixed Milestone"
     },
     {
-      "name": "API & Backend Systems Architecture",
-      "description": "High-throughput RESTful APIs, webhook ingestion pipelines, and database query optimization.",
-      "deliverables": ["Express/Node.js endpoints", "JWT auth", "Webhook handlers", "Prisma schema"],
-      "timeline": "1-2 weeks"
+      "name": "SaaS MVP & Micro-SaaS Development",
+      "description": "Turn ideas into revenue-generating SaaS MVPs in 2-4 weeks with auth, payments, database, and billing dashboards.",
+      "deliverables": [
+        "User authentication (Clerk / Auth.js)",
+        "Stripe / Razorpay payment checkout & webhooks",
+        "Relational database modeling",
+        "Customer portal & dashboard"
+      ],
+      "timeline": "2-4 weeks",
+      "pricingModel": "Fixed Milestone"
     },
     {
-      "name": "Frontend Performance & Next.js Tuning",
-      "description": "Core Web Vitals remediation, server-side caching, bundle optimization, and accessible UI engineering.",
-      "deliverables": ["Sub-second load times", "Perfect Lighthouse scores", "Clean TypeScript refactoring"],
-      "timeline": "3-7 days"
+      "name": "Landing Page Design & Development (Figma to Next.js)",
+      "description": "Pixel-perfect Figma to Next.js conversions with sub-second speeds, top Core Web Vitals, and lead form pipelines.",
+      "deliverables": [
+        "Pixel-perfect responsive layout",
+        "Core Web Vitals optimization",
+        "Lead capture & CRM integration"
+      ],
+      "timeline": "3-7 days",
+      "pricingModel": "Fixed Sprint"
+    },
+    {
+      "name": "Web Automation & AI Integration",
+      "description": "Custom backend automation workflows, webhook processing pipelines, web scraping, and LLM integrations.",
+      "deliverables": [
+        "Automated webhook pipelines",
+        "Email dispatch & notification triggers",
+        "LLM API integration (OpenAI / Claude)"
+      ],
+      "timeline": "1-2 weeks",
+      "pricingModel": "Fixed Scope"
+    },
+    {
+      "name": "Monthly Fractional Engineering Retainer",
+      "description": "Dedicated continuous engineering bandwidth for SaaS platforms and growing startups.",
+      "deliverables": [
+        "Feature delivery sprints",
+        "Performance & database tuning",
+        "Code reviews & bug fixes"
+      ],
+      "timeline": "Month-to-Month",
+      "pricingModel": "Monthly Retainer"
     }
   ],
   "caseStudies": [
@@ -52,10 +140,17 @@
       "category": "Developer Tooling & CRM",
       "url": "https://infraly.online",
       "repo": "https://github.com/nitindogra7/crm",
-      "stack": ["Next.js 16", "Express 5", "TypeScript", "PostgreSQL", "Prisma", "Clerk"],
+      "stack": [
+        "Next.js 16",
+        "Express 5",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Clerk"
+      ],
       "metrics": {
         "latency": "Sub-100ms API ingestion pipeline",
-        "reliability": "Zero dropped form leads with automated email dispatch"
+        "reliability": "100% lead capture with zero dropped form leads"
       }
     },
     {
@@ -63,7 +158,13 @@
       "category": "Creator Patronage Platform",
       "url": "https://get-me-chai-seven.vercel.app",
       "repo": "https://github.com/nitindogra7/getMeChai",
-      "stack": ["Next.js", "React 19", "PostgreSQL", "Razorpay", "Tailwind CSS"],
+      "stack": [
+        "Next.js App Router",
+        "React 19",
+        "PostgreSQL",
+        "Razorpay",
+        "Tailwind CSS"
+      ],
       "metrics": {
         "payments": "One-click Razorpay payment gateway integration with webhook reconciliation",
         "performance": "Sub-second feed rendering with optimistic UI updates"
@@ -74,7 +175,12 @@
       "category": "AI Vector Identity Generator",
       "url": "https://logocraft.nitindogra.space/",
       "repo": "https://github.com/nitindogra7/logoCraft",
-      "stack": ["React", "Express", "TypeScript", "Hugging Face Diffusion APIs"],
+      "stack": [
+        "React",
+        "Express",
+        "TypeScript",
+        "Hugging Face Diffusion APIs"
+      ],
       "metrics": {
         "generationTime": "Under 8 seconds per vector brand mark",
         "billing": "Credit-based token accounting and instant vector exports"
@@ -82,4 +188,3 @@
     }
   ]
 }
-
