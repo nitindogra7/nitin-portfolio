@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
-import { pageSocialMetadata } from "@/lib/site";
+import { internationalAlternates, pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
 const title = "Selected Web Projects & SaaS MVPs | Nitin Dogra";
@@ -11,7 +11,7 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/work" },
+  alternates: internationalAlternates("/work"),
   ...pageSocialMetadata(title, description, "/work"),
 };
 

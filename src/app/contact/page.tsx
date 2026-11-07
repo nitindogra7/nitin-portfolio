@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ContactSection from "@/components/ContactSection";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
-import { pageSocialMetadata } from "@/lib/site";
+import { internationalAlternates, pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
 const title = "Hire Nitin Dogra | Full-Stack Developer & SaaS MVP Engineer";
@@ -12,7 +12,7 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/contact" },
+  alternates: internationalAlternates("/contact"),
   ...pageSocialMetadata(title, description, "/contact"),
 };
 

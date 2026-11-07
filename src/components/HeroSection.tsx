@@ -75,7 +75,7 @@ return (
               alt="Portrait of Nitin Dogra, Full-Stack Developer in New Delhi, India building SaaS MVPs and web applications"
               width={100}
               height={100}
-              priority
+              preload={true}
             />
           </figure>
         </div>

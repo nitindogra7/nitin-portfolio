@@ -89,6 +89,11 @@ export function generateRootSchemaGraph() {
           "@type": "CollegeOrUniversity",
           name: "Maharishi University of Information Technology",
         },
+        nationality: {
+          "@type": "Country",
+          name: "India",
+        },
+        knowsLanguage: ["English", "Hindi"],
         sameAs: verifiedSameAs,
         knowsAbout: [
           "Next.js",
@@ -152,6 +157,13 @@ export function generateRootSchemaGraph() {
           "Worldwide",
         ],
         priceRange: "$$",
+        currenciesAccepted: "USD, INR, GBP, EUR",
+        paymentAccepted: "Credit Card, Debit Card, Wire Transfer, Stripe, Razorpay",
+        inLanguage: ["en-IN", "en-US", "en-GB", "en"],
+        availableLanguage: [
+          { "@type": "Language", "name": "English" },
+          { "@type": "Language", "name": "Hindi" },
+        ],
         sameAs: verifiedSameAs,
         hasOfferCatalog: {
           "@type": "OfferCatalog",

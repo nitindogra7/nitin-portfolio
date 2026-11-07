@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Footer from "@/components/Footer";
-import { pageSocialMetadata } from "@/lib/site";
+import { internationalAlternates, pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
 const title = "Writing on Web Development & Architecture | Nitin Dogra";
@@ -12,7 +12,7 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/blog" },
+  alternates: internationalAlternates("/blog"),
   robots: { index: false, follow: true },
   ...pageSocialMetadata(title, description, "/blog"),
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ExperienceSection from "@/components/ExperienceSection";
 import Footer from "@/components/Footer";
-import { pageSocialMetadata } from "@/lib/site";
+import { internationalAlternates, pageSocialMetadata } from "@/lib/site";
 import { generateBreadcrumbsJsonLd } from "@/lib/schema";
 
 const title = "Full-Stack Development Experience | Nitin Dogra";
@@ -11,7 +11,7 @@ const description =
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/experience" },
+  alternates: internationalAlternates("/experience"),
   ...pageSocialMetadata(title, description, "/experience"),
 };
 

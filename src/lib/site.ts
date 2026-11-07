@@ -24,12 +24,27 @@ export const socialImage = [
   },
 ];
 
+export function internationalAlternates(path: string) {
+  const url = absoluteUrl(path);
+  return {
+    canonical: url,
+    languages: {
+      "en": url,
+      "en-IN": url,
+      "en-US": url,
+      "en-GB": url,
+      "x-default": url,
+    },
+  };
+}
+
 export function pageSocialMetadata(title: string, description: string, path: string) {
   return {
     openGraph: {
       type: "website" as const,
       siteName: "Nitin Dogra Portfolio",
       locale: "en_IN",
+      alternateLocale: ["en_US", "en_GB"],
       title,
       description,
       url: absoluteUrl(path),

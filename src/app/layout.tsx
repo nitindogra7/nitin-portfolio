@@ -61,10 +61,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/icon.svg",
   },
+  alternates: {
+    canonical: absoluteUrl("/"),
+    languages: {
+      "en": absoluteUrl("/"),
+      "en-IN": absoluteUrl("/"),
+      "en-US": absoluteUrl("/"),
+      "en-GB": absoluteUrl("/"),
+      "x-default": absoluteUrl("/"),
+    },
+  },
   openGraph: {
     type: "website",
     siteName: "Nitin Dogra Portfolio",
     locale: "en_IN",
+    alternateLocale: ["en_US", "en_GB"],
     title: "Nitin Dogra | Full-Stack Developer in Delhi — Next.js, SaaS & Web Apps",
     description:
       "Portfolio of Nitin Dogra (Nitin), a Full-Stack Developer in New Delhi, India. I build fast, clean websites, SaaS MVPs, and web apps with Next.js, React, Node.js & TypeScript.",
@@ -106,6 +117,9 @@ export default function RootLayout({
         <meta name="geo.position" content="28.6139;77.2090" />
         <meta name="ICBM" content="28.6139, 77.2090" />
         <link rel="preconnect" href="https://rsms.me" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://rsms.me" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link
           rel="stylesheet"
