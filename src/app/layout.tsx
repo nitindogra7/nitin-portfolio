@@ -2,22 +2,23 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import MarginRules from "@/components/MarginRules";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 import Rails from "@/components/Rails";
 import PageOrbit from "@/components/PageOrbit";
 import Toast from "@/components/Toast";
 import ClientInteractiveController from "@/components/ClientInteractiveController";
 import { NavigationProvider } from "@/context/NavigationContext";
 import { absoluteUrl, isPreviewDeployment, siteUrl, socialImage } from "@/lib/site";
+import { generateRootSchemaGraph } from "@/lib/schema";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Nitin Dogra | Full Stack Developer in Delhi, India",
+    default: "Nitin Dogra — Full Stack Developer & Next.js Engineer | Delhi, India",
     template: "%s | Nitin Dogra",
   },
   description:
-    "Nitin Dogra is a Delhi-based full stack developer building web applications with React, Next.js, Node.js, and PostgreSQL. Explore his projects, experience, and contact details.",
+    "Delhi-based full stack developer building high-performance web applications with React, Next.js, Node.js & PostgreSQL. View selected projects and case studies.",
   applicationName: "Nitin Dogra Portfolio",
   authors: [{ name: "Nitin Dogra", url: absoluteUrl("/") }],
   creator: "Nitin Dogra",
@@ -29,17 +30,17 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Nitin Dogra Portfolio",
     locale: "en_IN",
-    title: "Nitin Dogra | Full Stack Developer in Delhi, India",
+    title: "Nitin Dogra — Full Stack Developer & Next.js Engineer | Delhi, India",
     description:
-      "Delhi-based full stack developer building web applications with React, Next.js, Node.js, and PostgreSQL. Explore Nitin Dogra’s projects and experience.",
+      "Delhi-based full stack developer building high-performance web applications with React, Next.js, Node.js & PostgreSQL. View selected projects and case studies.",
     url: absoluteUrl("/"),
     images: socialImage,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nitin Dogra | Full Stack Developer in Delhi, India",
+    title: "Nitin Dogra — Full Stack Developer & Next.js Engineer | Delhi, India",
     description:
-      "Full stack developer in Delhi, India. Explore Nitin Dogra’s web projects and experience.",
+      "Delhi-based full stack developer building high-performance web applications with React, Next.js, Node.js & PostgreSQL.",
     images: socialImage,
   },
   robots: { index: !isPreviewDeployment, follow: true },
@@ -69,6 +70,15 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+        />
+        <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLM Summary" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="Full LLM Context" />
+        <link rel="alternate" type="application/json" href="/profile.json" title="Structured Profile" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateRootSchemaGraph()).replace(/</g, "\\u003c"),
+          }}
         />
       </head>
       <body>

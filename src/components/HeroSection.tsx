@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Image from "next/image";
 import type { CSSProperties } from "react";
@@ -49,6 +49,7 @@ return (
     <section
       className="hero"
       id="home"
+      aria-label="Full-stack developer overview and background"
     >
       <svg className="hero-branches" aria-hidden="true" viewBox="0 0 295 205">
         <path className="branch" d="M25 53H280M25 143H280M152 53C191 53 174 17 217 17H280" />
@@ -71,7 +72,7 @@ return (
           <figure className="hero-portrait">
             <Image
               src="/avatar.png"
-              alt="Portrait of Nitin Dogra"
+              alt="Portrait of Nitin Dogra, Full Stack Developer in Delhi, India"
               width={100}
               height={100}
               priority
@@ -82,12 +83,16 @@ return (
         <h1>Hi, I’m Nitin Dogra<span className="muted">.</span></h1>
         <h2 className="hero-subtitle">Full-stack developer in Delhi, India.</h2>
         <p className="intro">
-          I build web applications from the interface to the database, with a focus on
-          clean experiences, reliable APIs, and the details that make a product feel right.
+          I build full-stack web applications from interface to database, delivering
+          high-performance Next.js frontends, scalable Node.js APIs, and clean UX.
         </p>
 
         <div className="actions flex flex-wrap items-center gap-2.5">
-          <a className="btn primary" href="#work">
+          <a
+            className="btn primary"
+            href="#work"
+            aria-label="Explore featured full-stack web projects and case studies"
+          >
             Explore my work{" "}
             <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
           </a>

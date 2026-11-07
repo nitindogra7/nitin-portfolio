@@ -10,6 +10,7 @@ export default function EducationSection() {
     <section
       className={`section ${activeSection === "education" ? "is-current" : ""}`}
       id="education"
+      aria-label="Computer Science education and academic background"
     >
       <div className="section-head">
         <h2 className="title">

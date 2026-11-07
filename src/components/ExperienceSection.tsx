@@ -12,6 +12,7 @@ export default function ExperienceSection() {
     <section
       className={`section ${activeSection === "experience" || pathname === "/experience" ? "is-current" : ""}`}
       id="experience"
+      aria-label="Professional software engineering and internship experience"
     >
       <div className="section-head">
         <SectionTitle className="title">

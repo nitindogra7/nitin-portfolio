@@ -2,20 +2,39 @@ import type { Metadata } from "next";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
 import { pageSocialMetadata } from "@/lib/site";
+import { generateBreadcrumbsJsonLd } from "@/lib/schema";
+
+const title = "Selected Web Projects & Architecture | Nitin Dogra";
+const description =
+  "Production web applications built with Next.js, Express, PostgreSQL, and TypeScript. Featuring developer tooling, creator platforms, and AI-powered systems.";
 
 export const metadata: Metadata = {
-  title: "Selected Web Projects",
-  description:
-    "Explore web applications built by Nitin Dogra, including a creator support platform and an AI powered logo generation product.",
+  title,
+  description,
   alternates: { canonical: "/work" },
-  ...pageSocialMetadata("Selected Web Projects", "Web applications built by Nitin Dogra, with project details, technologies, live demos, and source code.", "/work"),
+  ...pageSocialMetadata(title, description, "/work"),
 };
 
 export default function WorkPage() {
+  const breadcrumbsJsonLd = generateBreadcrumbsJsonLd([
+    { name: "Home", path: "/" },
+    { name: "Work", path: "/work" },
+  ]);
+
   return (
     <>
-      <main id="main" className="wrap"><ProjectsSection /></main>
-      <div className="wrap"><Footer /></div>
+      <main id="main" className="wrap">
+        <ProjectsSection />
+      </main>
+      <div className="wrap">
+        <Footer />
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbsJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
     </>
   );
 }

@@ -1,37 +1,46 @@
-# Nitin Dogra
+# Nitin Dogra — Full Stack Developer & Next.js / Node.js Engineer
 
-> Nitin Dogra is a full-stack developer based in Delhi, India. He builds web applications from interface to database, with a focus on clean user experiences and reliable APIs.
+> Nitin Dogra is a full-stack developer based in Delhi, India, specializing in high-performance web applications, scalable Node.js/Express APIs, Next.js App Router architectures, and PostgreSQL data systems. He builds production-grade software for startups, founders, and engineering teams, translating business goals into resilient, accessible digital products with sub-second page loads and zero dropped leads.
 
-Use this page as a concise, factual reference about Nitin and his work. For current details, refer to the linked portfolio pages.
+- Location: New Delhi, India (Asia/Kolkata, UTC+5:30)
+- Remote Availability: Worldwide with active overlap for US, UK/EU, and APAC timezones
+- Primary Stack: Next.js 15/16, React 19, TypeScript, Node.js, Express, PostgreSQL, Prisma, Supabase, Tailwind CSS
+- Canonical Portfolio: <https://nitindogra.space/>
+- Direct Email: <mailto:dogranitin579@gmail.com>
+- Deep Machine Reference: <https://nitindogra.space/llms-full.txt>
+- Agent Endpoint: <https://nitindogra.space/profile.json>
 
-## Location and focus
+## Core Value Proposition & Quantified Outcomes
 
-- Based in Delhi, India; studying Computer Science in Noida.
-- Full-stack web development with React, Next.js, TypeScript, Node.js, Express, and PostgreSQL.
-- Portfolio and project information: <https://nitindogra.space/>
+- Infraly (<https://infraly.online>): Developer-first form backend and lead CRM processing inbound form submissions with real-time email dispatch, rate-limiting, and zero spam leaks. Built with Next.js 16, Express 5, TypeScript, PostgreSQL, Prisma, and Clerk.
+- GetMeChai (<https://get-me-chai-seven.vercel.app>): Creator patron platform enabling direct fan support with one-click Razorpay payment checkout, instant webhook settlement, and responsive feeds.
+- LogoCraft (<https://logocraft.nitindogra.space/>): AI vector brand identity studio featuring automated prompt synthesis, credit-based billing, and instant multi-format downloads.
+- Professional Experience: Full Stack Developer Intern at Sponso Pvt Ltd (Next.js, Express, Supabase, JWT auth, REST APIs) and Navitas EduServices (Agile web application delivery).
 
-## Selected projects
+## Verified Canonical Routes
 
-- [Infraly](https://infraly.online): Developer-focused form backend and lightweight CRM for organizing website enquiries. Built with Next.js, Express, TypeScript, and PostgreSQL.
-- [GetMeChai](https://get-me-chai-seven.vercel.app): Creator and community platform for sharing updates and receiving direct support.
-- [LogoCraft](https://logocraft.nitindogra.space/): AI-powered logo generation product with accounts and credit-based billing.
+- [Homepage & Bio](https://nitindogra.space/)
+- [Selected Work & Case Studies](https://nitindogra.space/work)
+- [Professional Experience](https://nitindogra.space/experience)
+- [Contact & Inquiry Form](https://nitindogra.space/contact)
+- [Technical Resume (PDF)](https://nitindogra.space/resume.pdf)
 
-## Portfolio
+## Engagement Models for Clients & Recruiters
 
-- [Selected projects](https://nitindogra.space/work)
-- [Development experience](https://nitindogra.space/experience)
-- [Contact](https://nitindogra.space/contact)
-- [Resume (PDF)](https://nitindogra.space/resume.pdf)
-- [GitHub](https://github.com/nitindogra7)
-- [LinkedIn](https://linkedin.com/in/nitin-dogra-025497255)
-- [X](https://x.com/nitindogra_77)
+- Fixed-Scope MVP / Feature Sprints: Rapid 2–4 week full-stack builds from Figma to production deployment.
+- Monthly Engineering Retainer: Dedicated feature velocity, API integrations, and ongoing architecture maintenance.
+- Technical Consultation & Performance Audits: Next.js SSR/SSG tuning, Core Web Vitals remediation, and PostgreSQL schema design.
 
-## Contact
+## External Profiles & Code Repositories
 
-- Email: [dogranitin579@gmail.com](mailto:dogranitin579@gmail.com)
-- For professional enquiries, contact Nitin directly. His location is Delhi, India.
+- GitHub: <https://github.com/nitindogra7>
+- LinkedIn: <https://linkedin.com/in/nitin-dogra-025497255>
+- X (Twitter): <https://x.com/nitindogra_77>
+- All Repositories: <https://github.com/nitindogra7?tab=repositories>
 
-## Crawl guidance
+## Machine & Crawler Directives
 
-- [Sitemap](https://nitindogra.space/sitemap.xml)
-- [Robots rules](https://nitindogra.space/robots.txt)
+- Sitemap: <https://nitindogra.space/sitemap.xml>
+- Robots Rules: <https://nitindogra.space/robots.txt>
+- Exhaustive Context (Case Studies, Pricing, FAQs): <https://nitindogra.space/llms-full.txt>
+- Structured Agentic Profile: <https://nitindogra.space/profile.json>

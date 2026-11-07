@@ -1,9 +1,27 @@
-# SEO deployment setting
+# SEO, AEO, GEO & LLM Discovery Architecture
 
-The verified canonical origin is `https://nitindogra.space`. It is the default in the site configuration; set `NEXT_PUBLIC_SITE_URL` only when intentionally changing the canonical domain.
+The verified canonical origin is `https://nitindogra.space`. It is configured as default across site metadata, Schema.org entities, and sitemaps.
 
-The site emits canonical URLs, absolute social preview image URLs, a `ProfilePage`/`Person` JSON-LD block, and a sitemap for the four indexable routes. The `/blog` route is excluded from indexing and the sitemap until it has published articles; `/thank-you` is also excluded because it is a form confirmation page. Production `robots.txt` permits crawling and points to the sitemap. Vercel preview builds receive `noindex` metadata and a robots rule disallowing crawling; on another host, set `NEXT_PUBLIC_DEPLOYMENT_ENV=preview` for preview builds.
+## Headless AI Discovery Layer (Zero Visual Clutter)
 
-`public/llms.txt` provides AI systems with a concise, factual profile, project links, and ways to verify details on the site.
+1. `/robots.txt`: Configured via Next.js `src/app/robots.ts` to explicitly allow AI search and index bots (`Googlebot`, `Bingbot`, `OAI-SearchBot`, `GPTBot`, `ChatGPT-User`, `PerplexityBot`, `ClaudeBot`, `Claude-SearchBot`, `Google-Extended`, `Applebot-Extended`).
+2. `/llms.txt`: Curated markdown summary following the llms.txt standard, linking canonical routes and project repositories.
+3. `/llms-full.txt`: Deep context dossier containing full problem/architecture/metrics case studies, services and engagement tiers, technical stack matrix, and buyer FAQs for AI Answer Engines (ChatGPT, Perplexity, Claude, Gemini).
+4. `/profile.json`: Machine-readable structured profile for autonomous AI browsing agents.
+5. `/sitemap.xml`: Auto-generated for indexable routes (`/`, `/work`, `/experience`, `/contact`) with ISO-8601 `<lastmod>` timestamps and priorities.
 
-The indexable routes are `/`, `/work`, `/experience`, and `/contact`. No `lastModified` values are emitted because the repository does not provide reliable per-page modification dates. After deployment, verify `https://nitindogra.space/robots.txt` and `https://nitindogra.space/sitemap.xml`, then submit the sitemap in Google Search Console and verify the site there. Search ranking cannot be guaranteed; useful, original content and accurate local details matter more than adding keyword lists or unsupported schema.
+## Schema.org Knowledge Graph
+
+- Unified `@graph` in root layout (`src/lib/schema.ts`):
+  - `WebSite`: Publisher reference and language tags.
+  - `ProfilePage`: Author identity and canonical metadata.
+  - `Person`: Identity (`#person`), job title, `knowsAbout`, verified `sameAs` social profiles, educational history.
+  - `ProfessionalService`: Business identity (`#business`), `areaServed` (Worldwide, India, US, EU, APAC), and `OfferCatalog` services.
+  - `SoftwareSourceCode`: Rich machine nodes for Infraly, GetMeChai, and LogoCraft (abstract, architecture, metrics, repository URLs).
+  - `BreadcrumbList`: Injected into `<head>` across subroutes without visible DOM breadcrumbs.
+
+## Micro-Copy & Conversion Attribution
+
+- Bio and project descriptions refined in-place matching exact line length and CSS classes.
+- Zero layout shifts (CLS < 0.1), preconnected fonts, and high-signal `aria-label` / `alt` tags.
+- Lead attribution utility (`src/lib/attribution.ts`) capturing referrers (`chatgpt.com`, `perplexity.ai`, `claude.ai`, `google.com`) and passing them silently via contact form submissions.

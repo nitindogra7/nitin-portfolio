@@ -22,6 +22,7 @@ interface ProjectItem {
   liveUrl: string;
   sourceUrl: string;
   thumbnail: string;
+  imageAlt: string;
   visual: React.ReactNode;
 }
 
@@ -29,8 +30,7 @@ const projectsData: ProjectItem[] = [
   {
     title: "Infraly",
     description:
-      "A developer-first form backend and lightweight CRM that turns website enquiries into an organized lead inbox.",
-
+      "Developer-first form backend and lead CRM that captures website enquiries, automates notifications, and cuts response latency.",
     tags: [
       { name: "Next.js 16", icon: "devicon-nextjs-plain", colors: ["#5077d1", "#9bb5ff"] },
       { name: "Express 5", icon: "devicon-express-original", colors: ["#c49817", "#edcc58"] },
@@ -43,12 +43,13 @@ const projectsData: ProjectItem[] = [
     liveUrl: "https://infraly.online",
     sourceUrl: "https://github.com/nitindogra7/crm",
     thumbnail: "/projects/infraly.png",
+    imageAlt: "Infraly developer form backend and lead CRM web application interface",
     visual: <div className="mini-app"><div className="mini-top"><b>infraly.</b><span className="mini-dots">...</span></div><p style={{ fontSize: "11px", fontWeight: 600, margin: "12px 0 0" }}>Turn website enquiries into your next customers.</p></div>,
   },
   {
     title: "GetMeChai",
     description:
-      "A home for creators and their community. Share updates, connect with fans, and receive direct support.",
+      "Creator community platform enabling direct reader contributions with one-click Razorpay checkout and live updates.",
     tags: [
       { name: "Next.js", icon: "devicon-nextjs-plain", colors: ["#5077d1", "#9bb5ff"] },
       { name: "PostgreSQL", icon: "devicon-postgresql-plain", colors: ["#336791", "#72a9d5"] },
@@ -57,6 +58,7 @@ const projectsData: ProjectItem[] = [
     liveUrl: "https://get-me-chai-seven.vercel.app",
     sourceUrl: "https://github.com/nitindogra7/getMeChai",
     thumbnail: "/projects/getmechai.png",
+    imageAlt: "GetMeChai creator funding platform interface showing one-click supporter flow",
     visual: (
       <div className="mini-app">
         <div className="mini-top">
@@ -78,7 +80,7 @@ const projectsData: ProjectItem[] = [
   {
     title: "LogoCraft",
     description:
-      "Turn an idea into a visual identity. AI-powered logo generation with secure accounts and credit-based billing.",
+      "AI-driven vector identity generator with credit-based billing, custom prompt synthesis, and instant export workflows.",
     tags: [
       { name: "React", icon: "devicon-react-original", colors: ["#079bc1", "#61dafb"] },
       { name: "Express", icon: "devicon-express-original", colors: ["#c49817", "#edcc58"] },
@@ -87,6 +89,7 @@ const projectsData: ProjectItem[] = [
     liveUrl: "https://logocraft.nitindogra.space/",
     sourceUrl: "https://github.com/nitindogra7/logoCraft",
     thumbnail: "/projects/logocraft.png",
+    imageAlt: "LogoCraft AI vector logo generation studio interface with credit billing",
     visual: (
       <div className="mini-app">
         <div className="mini-top">
@@ -121,6 +124,7 @@ export default function ProjectsSection() {
     <section
       className={`section ${activeSection === "work" || pathname === "/work" ? "is-current" : ""}`}
       id="work"
+      aria-label="Selected full-stack web applications and engineering projects"
     >
       <div className="section-head">
         <SectionTitle className="title">
@@ -131,6 +135,8 @@ export default function ProjectsSection() {
           href="https://github.com/nitindogra7?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="View all open source repositories by Nitin Dogra on GitHub"
+          title="View all repositories on GitHub"
         >
           All repositories{" "}
           <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
@@ -143,7 +149,7 @@ export default function ProjectsSection() {
               <Image
                 className="project-thumbnail"
                 src={project.thumbnail}
-                alt={`${project.title} website preview`}
+                alt={project.imageAlt}
                 fill
                 sizes="(max-width: 600px) calc(100vw - 50px), 420px"
               />
@@ -205,7 +211,8 @@ export default function ProjectsSection() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`Visit live deployment of ${project.title}`}
+                  aria-label={`Visit live production deployment of ${project.title}`}
+                  title={`Visit live deployment of ${project.title}`}
                 >
                   Live website{" "}
                   <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
@@ -214,7 +221,8 @@ export default function ProjectsSection() {
                   href={project.sourceUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={`View ${project.title} source code on GitHub`}
+                  aria-label={`View ${project.title} source code repository on GitHub`}
+                  title={`View ${project.title} source code repository on GitHub`}
                 >
                   Source code{" "}
                   <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />

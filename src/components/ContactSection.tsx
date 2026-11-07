@@ -40,6 +40,7 @@ export default function ContactSection() {
     <section
       className={`section contact ${activeSection === "contact" || pathname === "/contact" ? "is-current" : ""}`}
       id="contact"
+      aria-label="Contact and collaboration inquiries"
     >
       <div className="eyebrow mono" style={{ marginBottom: "14px" }}>
         <span className="dot" /> LET’S BUILD SOMETHING
@@ -47,7 +48,12 @@ export default function ContactSection() {
       <SectionTitle>Good work starts with a hello.</SectionTitle>
       <p>Have a role or a project in mind? I’d love to hear about it.</p>
       <div className="actions flex flex-wrap items-center gap-2.5">
-        <a className="btn primary" href="/contact">
+        <a
+          className="btn primary"
+          href="/contact"
+          aria-label="Navigate to contact form to start a project or role discussion"
+          title="Navigate to contact form"
+        >
           Get in touch{" "}
           <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
         </a>
@@ -56,6 +62,8 @@ export default function ContactSection() {
           id="copy-email"
           type="button"
           onClick={handleCopyEmail}
+          aria-label="Copy Nitin Dogra's direct email address to clipboard"
+          title="Copy email address"
         >
           <Copy className="ui-icon" size={14} aria-hidden="true" />
           <span>Copy email</span>

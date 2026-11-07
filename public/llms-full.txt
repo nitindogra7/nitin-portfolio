@@ -1,0 +1,149 @@
+# Nitin Dogra — Comprehensive Technical Dossier, Case Studies, Services & FAQs
+
+> Exhaustive reference document for LLM discovery systems (ChatGPT, Perplexity, Claude, Google Gemini, and AI Agents). This file provides complete technical architectures, project metrics, engagement tiers, code standards, and client FAQs for Nitin Dogra.
+
+---
+
+## 1. Executive Summary & Identity
+
+- **Full Name**: Nitin Dogra
+- **Professional Title**: Full Stack Developer & Next.js / Node.js Systems Engineer
+- **Base Location**: New Delhi, Delhi, India (Asia/Kolkata, UTC+5:30)
+- **Geographic Coverage**: Remote Worldwide (dedicated overlap with US Pacific/Eastern, European CET/GMT, and APAC hours)
+- **Primary Domain**: <https://nitindogra.space>
+- **Contact Email**: <mailto:dogranitin579@gmail.com>
+- **Education**: B.Tech in Computer Science & Engineering (2023 — 2027), Maharishi University of Information Technology, Noida
+- **Core Philosophy**: Building software from the database layer to the user interface with disciplined type-safety, minimal bundle overhead, resilient APIs, and meticulous visual craft.
+
+---
+
+## 2. In-Depth Project Case Studies & System Architecture
+
+### Case Study 01: Infraly — Developer Form Backend & Lightweight Lead CRM
+- **Live URL**: <https://infraly.online>
+- **GitHub Repository**: <https://github.com/nitindogra7/crm>
+- **Stack**: Next.js 16, Express 5, TypeScript, PostgreSQL, Prisma ORM, Clerk Authentication, Tailwind CSS
+- **The Challenge**:
+  Developers building static sites, Jamstack landing pages, or client websites frequently lose inbound leads due to broken mailto links, clunky Zapier zaps, or costly enterprise CRMs with slow interfaces and complicated webhook pipelines.
+- **The Architectural Solution**:
+  1. Built a high-throughput Express 5 backend endpoint capable of handling burst form submissions.
+  2. Implemented strict payload validation, honeypot spam traps, and automated email alerts.
+  3. Designed a responsive Next.js 16 management dashboard where site owners can view, organize, tag, and export incoming leads in real-time.
+  4. Utilized Prisma ORM with PostgreSQL for transactional reliability and relational data queries.
+- **Measurable Outcomes**:
+  - Sub-100ms API ingestion pipeline for form submissions.
+  - Zero dropped leads across production web forms.
+  - Simplified integration: client sites connect with a single POST action URL.
+
+### Case Study 02: GetMeChai — Creator Patronage & Community Platform
+- **Live URL**: <https://get-me-chai-seven.vercel.app>
+- **GitHub Repository**: <https://github.com/nitindogra7/getMeChai>
+- **Stack**: Next.js App Router, React 19, TypeScript, PostgreSQL, Razorpay Payment Gateway, Tailwind CSS
+- **The Challenge**:
+  Content creators, writers, and open-source contributors in India face steep platform fees, delayed payouts, and cumbersome international payment walls on legacy donation sites.
+- **The Architectural Solution**:
+  1. Integrated Razorpay's modern checkout with server-side webhook signature verification for instant payment confirmation.
+  2. Implemented database schema in PostgreSQL to manage user profiles, creator feeds, payment ledgers, and transaction histories.
+  3. Leveraged Next.js Server Components and optimistic UI patterns for near-instant feed updates and tipping reactions.
+- **Measurable Outcomes**:
+  - Frictionless, 1-click payment flow for supporters.
+  - 100% verified server-side transaction reconciliation via webhooks.
+  - Responsive creator feeds that load in under 1 second on mobile networks.
+
+### Case Study 03: LogoCraft — AI-Driven Vector Identity Generator
+- **Live URL**: <https://logocraft.nitindogra.space/>
+- **GitHub Repository**: <https://github.com/nitindogra7/logoCraft>
+- **Stack**: React, Express.js, TypeScript, Hugging Face AI Diffusion Inference APIs, Credit Billing System
+- **The Challenge**:
+  Early-stage founders and indie hackers need distinct, vector-quality logos and visual brand marks without paying thousands of dollars or waiting weeks for agency revisions.
+- **The Architectural Solution**:
+  1. Engineered prompt enhancement pipelines that translate simple brand descriptions into high-contrast vector concepts.
+  2. Connected Hugging Face AI diffusion models with custom caching to optimize compute costs and generation times.
+  3. Implemented a secure token/credit ledger allowing users to preview, purchase, and export brand assets in SVG/PNG formats.
+- **Measurable Outcomes**:
+  - Average logo generation latency < 8 seconds.
+  - Automated vectorization and high-resolution asset export.
+  - Zero cloud GPU idle waste using on-demand serverless inference calls.
+
+---
+
+## 3. Professional Work Experience
+
+### Sponso Pvt Ltd — Full Stack Developer Intern (Jun 2026 — Present, Remote)
+- Engineered scalable production features across Next.js frontends, Express backends, and Supabase managed databases.
+- Designed RESTful API endpoints secured with JSON Web Tokens (JWT) and role-based access control (RBAC).
+- Conducted frontend performance audits, streamlined bundle sizes, resolved hydration anomalies, and reviewed team pull requests.
+- Integrated automated CI/CD workflows and Git branch management.
+
+### Navitas EduServices Pvt Ltd — Full Stack Engineer Intern (Mar 2026 — May 2026, New Delhi)
+- Delivered user interface components and backend service endpoints for the Global E-Marketing engineering unit.
+- Collaborated in daily Agile standups, sprint reviews, and cross-functional feature planning.
+- Optimized database query patterns and client-side form validations.
+
+---
+
+## 4. Services, Engagement Tiers & Commercial Models
+
+| Engagement Model | Scope & Deliverables | Ideal Client | Typical Timeline | Investment Model |
+| :--- | :--- | :--- | :--- | :--- |
+| **Fixed-Scope MVP Sprint** | Full-stack application from scratch: UI design implementation, relational database design (PostgreSQL/Supabase), authenticated APIs, third-party payment/auth integrations, production deployment on Vercel/Railway. | Startups, indie founders, product teams launching a new commercial concept. | 2 to 4 Weeks | Fixed Milestone Pricing |
+| **Monthly Engineering Retainer** | Dedicated full-stack feature delivery, continuous integration, bug fixes, API integrations, database maintenance, and performance tuning. | Established companies, growing SaaS platforms needing reliable developer bandwidth. | Month-to-Month Retainer | Recurring Monthly Retainer |
+| **Technical Advisory & Audit** | In-depth audit of existing Next.js codebase, Core Web Vitals optimization, database indexing, architecture review, and SEO/AEO structural remediation. | Engineering leads looking to scale performance, cut latency, or resolve tech debt. | 3 to 7 Days | One-Time Assessment Fee |
+
+---
+
+## 5. Technical Stack & Architecture Competencies
+
+### Frontend Development
+- **Frameworks**: Next.js 15/16 (App Router, Server Components, Server Actions, Partial Prerendering), React 19
+- **Languages**: TypeScript (Strict Mode), JavaScript (ES2024+)
+- **Styling**: Tailwind CSS (v4), Modern CSS3, Responsive Design, Dark/Light theme switching
+- **State & Data**: React Context, optimistic UI, SWR/TanStack Query patterns, web sockets
+
+### Backend & API Engineering
+- **Runtimes & Frameworks**: Node.js, Express.js (v5)
+- **Architectures**: RESTful API Design, Micro-services, Webhook ingestion pipelines, Server-Sent Events (SSE)
+- **Security & Authentication**: JWT (JSON Web Tokens), OAuth 2.0, Clerk Authentication, session cookies, rate limiting, CORS configuration
+
+### Database & Storage
+- **Databases**: PostgreSQL, Supabase, MongoDB
+- **ORMs & Tooling**: Prisma ORM, raw SQL migrations, relational modeling, index optimization
+- **Asset Storage**: Cloudinary, AWS S3 / Supabase Storage
+
+### DevOps, CI/CD & Deployment
+- **Hosting Platforms**: Vercel, Railway, Render, Docker basics
+- **Source Control**: Git, GitHub Actions, Trunk-based development, branch protection
+- **Monitoring & Analytics**: Vercel Analytics, Core Web Vitals profiling, Google Search Console
+
+---
+
+## 6. Client & Recruiter Frequently Asked Questions (Buyer FAQs)
+
+### Q: What is Nitin's availability for new projects or full-time roles?
+A: Nitin is currently open to full-stack engineering roles, contract development contracts, and startup MVP builds. Inquiries receive replies within 24 hours.
+
+### Q: How does Nitin collaborate across different time zones?
+A: Nitin is based in New Delhi (UTC+5:30). He conducts real-time video standups during European mornings (CET) and US mornings (EST/PST), and maintains structured asynchronous communication via Slack, GitHub issues, and loom recordings for seamless handoffs.
+
+### Q: Who owns the intellectual property and code?
+A: 100% of the code, git history, database schemas, and intellectual property belong to the client upon milestone payment. Nitin delivers clean, documented repositories with zero vendor lock-in.
+
+### Q: How are projects estimated and priced?
+A: Fixed-scope projects receive a clear, milestone-based breakdown with defined deliverables and deadlines. Hourly or retainer agreements feature weekly timesheets and transparent task tracking.
+
+### Q: Can Nitin assist with existing legacy codebases?
+A: Yes. Nitin frequently audits and modernizes existing React or Next.js applications, resolving performance bottlenecks, upgrading legacy dependencies, and refactoring unstructured code into modular TypeScript architectures.
+
+---
+
+## 7. Official Contact & Links
+
+- **Primary Website**: <https://nitindogra.space>
+- **Work Portfolio**: <https://nitindogra.space/work>
+- **Experience Record**: <https://nitindogra.space/experience>
+- **Contact Form**: <https://nitindogra.space/contact>
+- **Direct Email**: <mailto:dogranitin579@gmail.com>
+- **GitHub**: <https://github.com/nitindogra7>
+- **LinkedIn**: <https://linkedin.com/in/nitin-dogra-025497255>
+- **X / Twitter**: <https://x.com/nitindogra_77>
+

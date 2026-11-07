@@ -7,6 +7,8 @@ export const siteUrl = new URL(
   configuredSiteUrl || "https://nitindogra.space",
 ).origin;
 
+export const siteLastModified = "2026-11-07T00:00:00Z";
+
 export const isPreviewDeployment =
   process.env.VERCEL_ENV === "preview" ||
   process.env.NEXT_PUBLIC_DEPLOYMENT_ENV === "preview";
@@ -16,7 +18,7 @@ export function absoluteUrl(path: string) {
 }
 
 export const socialImage = [
-  { url: absoluteUrl("/avatar.png"), alt: "Portrait of Nitin Dogra" },
+  { url: absoluteUrl("/avatar.png"), alt: "Portrait of Nitin Dogra, Full Stack Developer" },
 ];
 
 export function pageSocialMetadata(title: string, description: string, path: string) {
@@ -31,7 +33,7 @@ export function pageSocialMetadata(title: string, description: string, path: str
       images: socialImage,
     },
     twitter: {
-      card: "summary" as const,
+      card: "summary_large_image" as const,
       title,
       description,
       images: socialImage,

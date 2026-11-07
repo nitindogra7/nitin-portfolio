@@ -1,9 +1,22 @@
-﻿"use client";
+"use client";
 
-import type { FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { ArrowUpRight } from "lucide-react";
+import { getLeadAttribution, initLeadAttribution } from "@/lib/attribution";
 
 export default function ContactForm() {
+  const [attribution, setAttribution] = useState({ source: "direct", ref: "" });
+  const [subjectDefault, setSubjectDefault] = useState("");
+
+  useEffect(() => {
+    initLeadAttribution();
+    const data = getLeadAttribution();
+    setAttribution(data);
+    if (data.ref) {
+      setSubjectDefault(`Project Inquiry regarding ${data.ref.charAt(0).toUpperCase() + data.ref.slice(1)}`);
+    }
+  }, []);
+
   function setThankYouRedirect(event: FormEvent<HTMLFormElement>) {
     const redirectField = event.currentTarget.elements.namedItem("_redirect");
     if (redirectField instanceof HTMLInputElement) {
@@ -33,7 +46,14 @@ export default function ContactForm() {
           </label>
           <label className="contact-field contact-field-wide">
             Subject
-            <input name="subject" type="text" required maxLength={160} />
+            <input
+              name="subject"
+              type="text"
+              required
+              maxLength={160}
+              defaultValue={subjectDefault}
+              key={subjectDefault}
+            />
           </label>
           <label className="contact-field contact-field-wide">
             Message
@@ -41,9 +61,11 @@ export default function ContactForm() {
           </label>
         </div>
         <input name="_redirect" type="hidden" value="/thank-you" />
+        <input name="_lead_source" type="hidden" value={attribution.source} />
+        <input name="_project_ref" type="hidden" value={attribution.ref} />
         <input name="_gotcha" type="text" hidden tabIndex={-1} autoComplete="off" aria-hidden="true" />
         <div className="contact-form-actions">
-          <button className="btn primary" type="submit">
+          <button className="btn primary" type="submit" aria-label="Submit message through contact form">
             Send message <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />
           </button>
           <p className="contact-form-note">Your message will be sent through the contact form.</p>

@@ -130,6 +130,7 @@ export default function ActivitySection() {
     <section
       className={`section ${activeSection === "activity" ? "is-current" : ""}`}
       id="activity"
+      aria-label="GitHub contribution activity and open source commitment"
     >
       <div className="section-head">
         <h2 className="title">
@@ -140,6 +141,8 @@ export default function ActivitySection() {
           target="_blank"
           rel="noopener noreferrer"
           className="text-link"
+          aria-label="View Nitin Dogra GitHub profile and public contributions"
+          title="View GitHub profile"
         >
           View GitHub{" "}
           <ArrowUpRight className="ui-icon arrow-icon" size={14} aria-hidden="true" />

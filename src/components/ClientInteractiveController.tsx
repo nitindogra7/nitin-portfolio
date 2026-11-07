@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useNavigation } from "@/context/NavigationContext";
 import { usePathname } from "next/navigation";
+import { initLeadAttribution } from "@/lib/attribution";
 
 export default function ClientInteractiveController() {
   const { setActiveSection, setBranchRunning } = useNavigation();
@@ -10,6 +11,7 @@ export default function ClientInteractiveController() {
   const activeSectionRef = useRef("home");
 
   useEffect(() => {
+    initLeadAttribution();
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     // 1. Scroll-linked rulers & active section spy

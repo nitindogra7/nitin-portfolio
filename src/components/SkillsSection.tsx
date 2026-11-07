@@ -59,6 +59,7 @@ export default function SkillsSection() {
     <section
       className={`section ${activeSection === "skills" ? "is-current" : ""}`}
       id="skills"
+      aria-label="Technical skills, programming languages, and developer tools"
     >
       <div className="section-head">
         <h2 className="title">

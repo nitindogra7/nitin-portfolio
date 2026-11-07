@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Nitin Dogra",
+  "title": "Full Stack Developer",
+  "bio": "Delhi-based full stack developer building high-performance web applications with React, Next.js, Node.js, and PostgreSQL.",
+  "canonicalUrl": "https://nitindogra.space",
+  "email": "dogranitin579@gmail.com",
+  "location": {
+    "city": "Delhi",
+    "state": "Delhi",
+    "country": "India",
+    "timezone": "Asia/Kolkata (UTC+5:30)",
+    "remote": "Worldwide with US/EU/APAC overlap"
+  },
+  "status": "Available for contract projects and full-stack engineering roles",
+  "bookingUrl": "https://nitindogra.space/contact",
+  "socialLinks": {
+    "github": "https://github.com/nitindogra7",
+    "linkedin": "https://linkedin.com/in/nitin-dogra-025497255",
+    "x": "https://x.com/nitindogra_77"
+  },
+  "skills": {
+    "languages": ["TypeScript", "JavaScript", "SQL", "HTML5", "CSS3"],
+    "frontend": ["Next.js (App Router)", "React 19", "Tailwind CSS", "Server Components"],
+    "backend": ["Node.js", "Express.js", "REST APIs", "JWT", "OAuth"],
+    "databases": ["PostgreSQL", "Supabase", "Prisma ORM", "MongoDB"],
+    "tooling": ["Git", "GitHub Actions", "Vercel", "Razorpay", "Clerk"]
+  },
+  "services": [
+    {
+      "name": "Full-Stack Web Application Development",
+      "description": "Production-ready web apps from Figma to database schema, API logic, and Vercel deployment.",
+      "deliverables": ["Interactive UI", "PostgreSQL database", "Authenticated APIs", "Deployment"],
+      "timeline": "2-4 weeks"
+    },
+    {
+      "name": "API & Backend Systems Architecture",
+      "description": "High-throughput RESTful APIs, webhook ingestion pipelines, and database query optimization.",
+      "deliverables": ["Express/Node.js endpoints", "JWT auth", "Webhook handlers", "Prisma schema"],
+      "timeline": "1-2 weeks"
+    },
+    {
+      "name": "Frontend Performance & Next.js Tuning",
+      "description": "Core Web Vitals remediation, server-side caching, bundle optimization, and accessible UI engineering.",
+      "deliverables": ["Sub-second load times", "Perfect Lighthouse scores", "Clean TypeScript refactoring"],
+      "timeline": "3-7 days"
+    }
+  ],
+  "caseStudies": [
+    {
+      "name": "Infraly",
+      "category": "Developer Tooling & CRM",
+      "url": "https://infraly.online",
+      "repo": "https://github.com/nitindogra7/crm",
+      "stack": ["Next.js 16", "Express 5", "TypeScript", "PostgreSQL", "Prisma", "Clerk"],
+      "metrics": {
+        "latency": "Sub-100ms API ingestion pipeline",
+        "reliability": "Zero dropped form leads with automated email dispatch"
+      }
+    },
+    {
+      "name": "GetMeChai",
+      "category": "Creator Patronage Platform",
+      "url": "https://get-me-chai-seven.vercel.app",
+      "repo": "https://github.com/nitindogra7/getMeChai",
+      "stack": ["Next.js", "React 19", "PostgreSQL", "Razorpay", "Tailwind CSS"],
+      "metrics": {
+        "payments": "One-click Razorpay payment gateway integration with webhook reconciliation",
+        "performance": "Sub-second feed rendering with optimistic UI updates"
+      }
+    },
+    {
+      "name": "LogoCraft",
+      "category": "AI Vector Identity Generator",
+      "url": "https://logocraft.nitindogra.space/",
+      "repo": "https://github.com/nitindogra7/logoCraft",
+      "stack": ["React", "Express", "TypeScript", "Hugging Face Diffusion APIs"],
+      "metrics": {
+        "generationTime": "Under 8 seconds per vector brand mark",
+        "billing": "Credit-based token accounting and instant vector exports"
+      }
+    }
+  ]
+}
+

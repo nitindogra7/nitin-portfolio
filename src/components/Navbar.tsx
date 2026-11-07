@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -55,6 +55,7 @@ export default function Navbar() {
             href="/work"
             className={currentPage === "work" ? "active" : undefined}
             aria-current={currentPage === "work" ? "page" : undefined}
+            aria-label="View selected web projects and architecture"
             onClick={() => setMenuOpen(false)}
           >
             Work
@@ -63,6 +64,7 @@ export default function Navbar() {
             href="/experience"
             className={currentPage === "experience" ? "active" : undefined}
             aria-current={currentPage === "experience" ? "page" : undefined}
+            aria-label="View software engineering and internship experience"
             onClick={() => setMenuOpen(false)}
           >
             Experience
@@ -71,6 +73,7 @@ export default function Navbar() {
             href="/contact"
             className={currentPage === "contact" ? "active" : undefined}
             aria-current={currentPage === "contact" ? "page" : undefined}
+            aria-label="Get in touch with Nitin Dogra"
             onClick={() => setMenuOpen(false)}
           >
             Contact
@@ -79,6 +82,7 @@ export default function Navbar() {
             href="/blog"
             className={currentPage === "blog" ? "active" : undefined}
             aria-current={currentPage === "blog" ? "page" : undefined}
+            aria-label="Read technical articles and notes from the build"
             onClick={() => setMenuOpen(false)}
           >
             Blog
