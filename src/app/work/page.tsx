@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
-import { pageSocialMetadata, siteUrl } from "@/lib/site";
+import { pageSocialMetadata } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Selected Web Projects",
   description:
     "Explore web applications built by Nitin Dogra, including a creator support platform and an AI powered logo generation product.",
-  alternates: siteUrl ? { canonical: "/work" } : undefined,
+  alternates: { canonical: "/work" },
   ...pageSocialMetadata("Selected Web Projects", "Web applications built by Nitin Dogra, with project details, technologies, live demos, and source code.", "/work"),
 };
 

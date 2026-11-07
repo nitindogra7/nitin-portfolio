@@ -79,10 +79,10 @@ return (
           </figure>
         </div>
 
-        <h1>Hi, I'm Nitin<span className="muted">.</span></h1>
-        <h2 className="hero-subtitle">Full stack. Thoughtfully built.</h2>
+        <h1>Hi, I’m Nitin Dogra<span className="muted">.</span></h1>
+        <h2 className="hero-subtitle">Full-stack developer in Delhi, India.</h2>
         <p className="intro">
-          I build web applications from the interface to the database. Focused on
+          I build web applications from the interface to the database, with a focus on
           clean experiences, reliable APIs, and the details that make a product feel right.
         </p>
 
@@ -145,7 +145,6 @@ return (
     </section>
   );
 }
-
 
 
 

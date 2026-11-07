@@ -11,14 +11,17 @@ import { NavigationProvider } from "@/context/NavigationContext";
 import { absoluteUrl, isPreviewDeployment, siteUrl, socialImage } from "@/lib/site";
 
 export const metadata: Metadata = {
-  metadataBase: siteUrl ? new URL(siteUrl) : undefined,
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Nitin Dogra | Full Stack Developer",
+    default: "Nitin Dogra | Full Stack Developer in Delhi, India",
     template: "%s | Nitin Dogra",
   },
   description:
-    "Nitin Dogra is a full stack developer in Delhi, India, building web applications from interface to database with React, Next.js, Node.js, and PostgreSQL.",
+    "Nitin Dogra is a Delhi-based full stack developer building web applications with React, Next.js, Node.js, and PostgreSQL. Explore his projects, experience, and contact details.",
   applicationName: "Nitin Dogra Portfolio",
+  authors: [{ name: "Nitin Dogra", url: absoluteUrl("/") }],
+  creator: "Nitin Dogra",
+  publisher: "Nitin Dogra",
   icons: {
     icon: "/icon.svg",
   },
@@ -26,15 +29,15 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Nitin Dogra Portfolio",
     locale: "en_IN",
-    title: "Nitin Dogra | Full Stack Developer",
+    title: "Nitin Dogra | Full Stack Developer in Delhi, India",
     description:
-      "Full stack developer in Delhi, India. Explore Nitin Dogra’s web projects, experience, and tools.",
+      "Delhi-based full stack developer building web applications with React, Next.js, Node.js, and PostgreSQL. Explore Nitin Dogra’s projects and experience.",
     url: absoluteUrl("/"),
     images: socialImage,
   },
   twitter: {
-    card: "summary",
-    title: "Nitin Dogra | Full Stack Developer",
+    card: "summary_large_image",
+    title: "Nitin Dogra | Full Stack Developer in Delhi, India",
     description:
       "Full stack developer in Delhi, India. Explore Nitin Dogra’s web projects and experience.",
     images: socialImage,

@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Footer from "@/components/Footer";
-import { pageSocialMetadata, siteUrl } from "@/lib/site";
+import { pageSocialMetadata } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Writing on Web Development",
   description:
     "Notes from Nitin Dogra on web development, projects, tools, and lessons learned. More writing is in progress.",
-  alternates: siteUrl ? { canonical: "/blog" } : undefined,
+  alternates: { canonical: "/blog" },
+  robots: { index: false, follow: true },
   ...pageSocialMetadata("Writing on Web Development", "Notes from Nitin Dogra on web development, projects, and tools.", "/blog"),
 };
 

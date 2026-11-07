@@ -7,10 +7,10 @@ import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-import { absoluteUrl, siteUrl } from "@/lib/site";
+import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
-  alternates: siteUrl ? { canonical: "/" } : undefined,
+  alternates: { canonical: "/" },
 };
 
 export default function Home() {
@@ -39,11 +39,30 @@ export default function Home() {
               "@id": absoluteUrl("/#person"),
               name: "Nitin Dogra",
               jobTitle: "Full Stack Developer",
-              description: "Full stack developer building web applications from interface to database.",
+              description:
+                "Delhi-based full stack developer building web applications from interface to database.",
+              url: absoluteUrl("/"),
               image: absoluteUrl("/avatar.png"),
               email: "mailto:dogranitin579@gmail.com",
-              address: { "@type": "PostalAddress", addressLocality: "Delhi", addressCountry: "IN" },
-              sameAs: ["https://github.com/nitindogra7", "https://linkedin.com/in/nitin-dogra-025497255"],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Delhi",
+                addressRegion: "Delhi",
+                addressCountry: "IN",
+              },
+              sameAs: [
+                "https://github.com/nitindogra7",
+                "https://linkedin.com/in/nitin-dogra-025497255",
+                "https://x.com/nitindogra_77",
+              ],
+              knowsAbout: [
+                "Full-stack web development",
+                "React",
+                "Next.js",
+                "Node.js",
+                "TypeScript",
+                "PostgreSQL",
+              ],
             },
           }).replace(/</g, "\\u003c"),
         }}

@@ -1,0 +1,37 @@
+# Nitin Dogra
+
+> Nitin Dogra is a full-stack developer based in Delhi, India. He builds web applications from interface to database, with a focus on clean user experiences and reliable APIs.
+
+Use this page as a concise, factual reference about Nitin and his work. For current details, refer to the linked portfolio pages.
+
+## Location and focus
+
+- Based in Delhi, India; studying Computer Science in Noida.
+- Full-stack web development with React, Next.js, TypeScript, Node.js, Express, and PostgreSQL.
+- Portfolio and project information: <https://nitindogra.space/>
+
+## Selected projects
+
+- [Infraly](https://infraly.online): Developer-focused form backend and lightweight CRM for organizing website enquiries. Built with Next.js, Express, TypeScript, and PostgreSQL.
+- [GetMeChai](https://get-me-chai-seven.vercel.app): Creator and community platform for sharing updates and receiving direct support.
+- [LogoCraft](https://logocraft.nitindogra.space/): AI-powered logo generation product with accounts and credit-based billing.
+
+## Portfolio
+
+- [Selected projects](https://nitindogra.space/work)
+- [Development experience](https://nitindogra.space/experience)
+- [Contact](https://nitindogra.space/contact)
+- [Resume (PDF)](https://nitindogra.space/resume.pdf)
+- [GitHub](https://github.com/nitindogra7)
+- [LinkedIn](https://linkedin.com/in/nitin-dogra-025497255)
+- [X](https://x.com/nitindogra_77)
+
+## Contact
+
+- Email: [dogranitin579@gmail.com](mailto:dogranitin579@gmail.com)
+- For professional enquiries, contact Nitin directly. His location is Delhi, India.
+
+## Crawl guidance
+
+- [Sitemap](https://nitindogra.space/sitemap.xml)
+- [Robots rules](https://nitindogra.space/robots.txt)
